@@ -67,7 +67,21 @@ Caso tenha ficado interessado em testar o Ruke, recomendo que instale pelo [Carg
 cargo install ruke
 ```
 
-Você pode encontrar a documentação nas seções ["Mastering the CLI"](https://github.com/kauefraga/ruke?tab=readme-ov-file#mastering-the-cli) e ["Mastering the Rukefile"](https://github.com/kauefraga/ruke?tab=readme-ov-file#mastering-the-rukefile) no [repositório do projeto](https://github.com/kauefraga/ruke).
+Para iniciar um arquivo de configuração, basta executar:
+
+```bash
+ruke init
+```
+
+Pra executar a tarefa "main", execute:
+
+```bash
+ruke # ou ruke main
+```
+
+Com o comando `ruke --help` você pode ver um menu de ajuda com os comandos que existem e o que eles fazem. O comando `ruke {comando} --help` irá mostrar mais detalhes de um comando específico.
+
+Você pode aprender como adicionar tarefas e especificar comandos na documentação, nas seções ["Mastering the CLI"](https://github.com/kauefraga/ruke?tab=readme-ov-file#mastering-the-cli) e ["Mastering the Rukefile"](https://github.com/kauefraga/ruke?tab=readme-ov-file#mastering-the-rukefile) no [repositório do projeto](https://github.com/kauefraga/ruke).
 
 Estarei aberto para dúvidas ou sugestões por aqui ou pelo [Twitter/X](https://twitter.com/rkauefraga) se preferir.
 
