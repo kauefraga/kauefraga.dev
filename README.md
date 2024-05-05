@@ -2,6 +2,8 @@
 
 > Here you'll find all articles wrote by me, including their images and code samples.
 
+I mainly write for [dev.to](https://dev.to/kauefraga) and [tabnews](http://tabnews.com.br/kauefraga).
+
 Looking for a specific article? Each one should look like this `YYYY-MM-DD-article-title.md`.
 
 ## Contributing
