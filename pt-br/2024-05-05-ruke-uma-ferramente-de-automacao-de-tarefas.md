@@ -2,9 +2,7 @@
 
 Opa, tudo bem? Queria compartilhar um projeto que estou fazendo e mantendo.
 
-O Ruke é uma ferramenta simples para automatizar tarefas de um projeto. Com ele, você pode definir uma tarefa com comandos que serão executados de maneira sequencial.
-
-Essas tarefas e comandos ficam em um arquivo [TOML](https://toml.io/en/) bem fácil de ler e configurar.
+O Ruke é uma ferramenta simples para automatizar tarefas de um projeto. Com ele, você pode definir uma tarefa com comandos que serão executados de maneira sequencial. Essas tarefas e comandos ficam em um arquivo [TOML](https://toml.io/en/) bem fácil de ler e configurar.
 
 O projeto é feito em Rust e tem uma interface de linha de comando (CLI).
 
@@ -51,7 +49,7 @@ E por último mas não menos importante, o [Shwuy](https://twitter.com/shwuydev)
 
 Essas contribuições agregaram na performance e, principalmente, na usabilidade da ferramenta.
 
-Agradeço muito a eles por terem me ajudado a construir esse projeto (e não só), têm um espaço no meu coração para eles. Foram **os primeiros contribuidores** de um projeto meu.
+Agradeço muito a eles por terem me ajudado a construir esse projeto (e não só), têm um espaço no meu coração. Foram **os primeiros contribuidores** de um projeto meu.
 
 ## Atualização mais recente
 
@@ -62,6 +60,14 @@ Dá uma olhada em como ficou.
 ![Demonstração das alterações mais recentes do Ruke, baseadas nas saídas do Bun.](../gifs/2024-05-05-demo-ruke-2.gif)
 
 Tenho gostado bastante do projeto pois adoro criar ferramentas para desenvolvedores e também porque está sendo útil para mim, tanto no âmbito do aprendizado quanto da utilização. Inclusive, estou usando o Ruke em um projeto full stack que comecei recentemente chamado [Inu](https://github.com/kauefraga/inus) (aquele ali em cima no gif, é o back end).
+
+Caso tenha ficado interessado em testar o Ruke, recomendo que instale pelo [Cargo](https://doc.rust-lang.org/cargo/) usando o comando abaixo:
+
+```bash
+cargo install ruke
+```
+
+Você pode encontrar a documentação nas seções ["Mastering the CLI"](https://github.com/kauefraga/ruke?tab=readme-ov-file#mastering-the-cli) e ["Mastering the Rukefile"](https://github.com/kauefraga/ruke?tab=readme-ov-file#mastering-the-rukefile) no [repositório do projeto](https://github.com/kauefraga/ruke).
 
 Estarei aberto para dúvidas ou sugestões por aqui ou pelo [Twitter/X](https://twitter.com/rkauefraga) se preferir.
 
