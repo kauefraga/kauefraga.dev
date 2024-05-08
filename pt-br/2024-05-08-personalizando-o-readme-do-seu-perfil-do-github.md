@@ -30,9 +30,29 @@ Eu recomendo que você coloque as seguintes informações:
 
 Vale ressaltar que o README deve ficar com a sua cara, com o que você gostar e achar que deve ter. Reflita sua extravagância, seu minimalismo, suas cores favoritas, tudo que te represente.
 
-Vamos editar pelo próprio GitHub, então clique no lápis para editar, veja a seguir.
+Para editar pelo próprio GitHub clique no lápis para editar, veja a seguir.
 
 ![entrando no modo de edição do README](../images/2024-05-08-personalizando-o-readme-do-seu-perfil-do-github-3.png)
+
+A partir de agora é contigo, totalmente pessoal. Vou deixar vários materiais e ideias de estilos.
+
+### GitHub Readme Stats
+
+Veja [o repositório](https://github.com/anuraghazra/github-readme-stats).
+
+![demo dos stats]()
+
+### Skill Icons
+
+Veja [o site](https://skillicons.dev/).
+
+![demo dos skill icons]()
+
+### Markdown Badges
+
+Veja [o repositório](https://github.com/Ileriayo/markdown-badges).
+
+![demo das badges]()
 
 ## Recomendações
 
