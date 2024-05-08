@@ -1,4 +1,9 @@
-Título: Introdução ao Rust
++++
+title = 'Introdução ao Rust'
+summary = ' '
+date = 2024-02-18
+author = ['Kauê Fraga Rodrigues']
++++
 
 Olá! Se você quer aprender ou está estudando a linguagem de programação Rust assim como eu, acho que aqui consegui sintetizar bem a linguagem nesse texto introdutório. Bora lá!!
 
@@ -32,8 +37,6 @@ De acordo com [esse vídeo](https://youtu.be/4YU_r70yGjQ) (Rust is not a faster 
 Obrigado por ler! ❤
 
 ---
+
 - [TabNews](https://www.tabnews.com.br/kauefraga/introducao-ao-rust)
 - [DevTo](https://dev.to/kauefraga/introducao-ao-rust-463o)
-
-[[Interagindo com devs]]
-[[Rust]]

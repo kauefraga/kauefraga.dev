@@ -1,4 +1,9 @@
-# Introdução ao markdown e aos READMEs
++++
+title = 'Introdução ao markdown e aos READMEs'
+summary = ' '
+date = 2024-03-18
+author = ['Kauê Fraga Rodrigues']
++++
 
 Olá, tudo certo?
 

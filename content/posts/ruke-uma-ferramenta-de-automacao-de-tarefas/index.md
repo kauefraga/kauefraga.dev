@@ -1,4 +1,9 @@
-# Ruke, uma ferramenta de automação de tarefas
++++
+title = 'Ruke, uma ferramenta de automação de tarefas'
+summary = 'Entenda um pouco do contexto do Ruke'
+date = 2024-05-05
+author = ['Kauê Fraga Rodrigues']
++++
 
 Opa, tudo bem? Queria compartilhar um projeto que estou fazendo e mantendo.
 
@@ -8,7 +13,7 @@ O projeto é feito em Rust e tem uma interface de linha de comando (CLI).
 
 Veja uma demonstração do Ruke na versão 0.1.3.
 
-![Demonstração do ruke, mostrando a interface e executando algumas tarefas.](../gifs/2024-05-05-demo-ruke-1.gif)
+![Demonstração do ruke, mostrando a interface e executando algumas tarefas.](gifs/demo-1.gif)
 
 ## Escolhas importantes
 
@@ -57,7 +62,7 @@ A última atualização do Ruke (0.1.6) incrementou ainda mais a usabilidade. In
 
 Dá uma olhada em como ficou.
 
-![Demonstração das alterações mais recentes do Ruke, baseadas nas saídas do Bun.](../gifs/2024-05-05-demo-ruke-2.gif)
+![Demonstração das alterações mais recentes do Ruke, baseadas nas saídas do Bun.](gifs/demo-2.gif)
 
 Tenho gostado bastante do projeto pois adoro criar ferramentas para desenvolvedores e também porque está sendo útil para mim, tanto no âmbito do aprendizado quanto da utilização. Inclusive, estou usando o Ruke em um projeto full stack que comecei recentemente chamado [Inu](https://github.com/kauefraga/inus) (aquele ali em cima no gif, é o back end).
 

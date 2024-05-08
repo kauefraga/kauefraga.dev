@@ -1,3 +1,10 @@
++++
+title = 'Colocando coelhinhos no computaria e enlouquecendo'
+summary = ' '
+date = 2024-04-06
+author = ['Kauê Fraga Rodrigues']
++++
+
 Publicado originalmente no [Computaria](https://computaria.gitlab.io/blog/2024/04/06/colocando-coelhinhos-no-computaria)
 
 Olá! Me chamo Kauê, tenho 16 anos e é um prazer estar redigindo este texto como o primeiro convidado do Computaria 😊

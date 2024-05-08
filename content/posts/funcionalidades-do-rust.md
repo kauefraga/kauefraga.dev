@@ -1,4 +1,9 @@
-Título: Funcionalidades do Rust
++++
+title = 'Funcionalidades do Rust'
+summary = ' '
+date = 2024-02-19
+author = ['Kauê Fraga Rodrigues']
++++
 
 Olá! Se você quer saber um pouco mais sobre as **principais** funcionalidades do Rust, então acho que posso ajudar. Bora 👊
 
@@ -89,12 +94,11 @@ Inspirado no NPM (node package manager) do NodeJS, o Cargo é a ferramenta ofici
 Obrigado por ler! ❤
 
 **Fontes**:
+
 - [Rust is not a faster horse](https://youtu.be/4YU_r70yGjQ)
 - [All Rust features explained](https://youtu.be/784JWR4oxOI)
 
 ---
+
 - [TabNews](https://www.tabnews.com.br/kauefraga/funcionalidades-do-rust)
 - [DevTo](https://dev.to/kauefraga/funcionalidades-do-rust-2bem)
-
-[[Interagindo com devs]]
-[[Rust]]

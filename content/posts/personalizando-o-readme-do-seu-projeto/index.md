@@ -1,4 +1,9 @@
-# Personalizando o README do seu projeto
++++
+title = 'Personalizando o README do seu projeto'
+summary = ' '
+date = 2024-03-24
+author = ['Kauê Fraga Rodrigues']
++++
 
 Opa, tudo tranquilo?
 
@@ -206,7 +211,7 @@ Este projeto está sob a licença y - Veja a [LICENÇA](https://github.com/usua
 
 Veja como ficou o README copiando e colando direto daqui:
 
-![resultado final](../images/2024-03-24-personalizando-o-readme-do-seu-projeto-1.png)
+![resultado final](images/resultado-final.png)
 
 Basicamente é isso. Lembra que o README é um "cartão de visitas" para o seu projeto? O que você quer mostrar aos seus visitantes? Você deve montar seu README pensando nas informações que são relevantes para o seu projeto. A partir disso, escreva e refine ao longo do tempo.
 

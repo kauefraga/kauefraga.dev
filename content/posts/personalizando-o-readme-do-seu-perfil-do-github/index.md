@@ -1,4 +1,10 @@
-# Personalizando o README do seu perfil do GitHub
++++
+title = 'Personalizando o README do seu perfil do GitHub'
+summary = ' '
+date = 2024-05-08
+author = ['Kauê Fraga Rodrigues']
+draft = true
++++
 
 Opa, tranquilo? Bora deixar o README do teu GitHub uma belezura!
 
@@ -10,13 +16,13 @@ O README do GitHub é o cartão de visita do seu perfil. Antes de personalizar e
 
 Crie um repositório com o mesmo nome do seu perfil. Como meu nome de usuário é "kauefraga" o nome do repositório seria "kauefraga" também.
 
-![criando repositório seu-nome-de-usuario/seu-nome-de-usuario](../images/2024-05-08-personalizando-o-readme-do-seu-perfil-do-github-1.png)
+![criando repositório seu-nome-de-usuario/seu-nome-de-usuario](images/guide-1.png)
 
 <h6 align="center">O erro é porque eu já tenho esse repositório.</h6>
 
 Para facilitar seu trabalho já inclua o arquivo README no seu repositório.
 
-![incluindo o arquivo README e criando o repositório de fato](../images/2024-05-08-personalizando-o-readme-do-seu-perfil-do-github-2.png)
+![incluindo o arquivo README e criando o repositório de fato](images/guide-2.png)
 
 Feito isso você está pronto para customizar o seu README.
 
@@ -32,7 +38,7 @@ Vale ressaltar que o README deve ficar com a sua cara, com o que você gostar e 
 
 Para editar pelo próprio GitHub clique no lápis para editar, veja a seguir.
 
-![entrando no modo de edição do README](../images/2024-05-08-personalizando-o-readme-do-seu-perfil-do-github-3.png)
+![entrando no modo de edição do README](images/guide-3.png)
 
 A partir de agora é contigo, totalmente pessoal. Vou deixar vários materiais e ideias de estilos.
 

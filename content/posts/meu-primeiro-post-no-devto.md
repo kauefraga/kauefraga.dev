@@ -1,3 +1,10 @@
++++
+title = 'Meu primeiro post no dev.to'
+summary = ' '
+date = 2024-02-18
+author = ['Kauê Fraga Rodrigues']
++++
+
 A verdade é que escrevi para o TabNews, copiei e colei no DevTo, mas ninguém precisa saber... 😂
 
 - [Post no TabNews](https://www.tabnews.com.br/kauefraga/aprendendo-rust)
@@ -20,5 +27,3 @@ Partindo disso, gostaria de saber quais tópicos vocês recomendam para entender
 Brincadeiras à parte, pretendo me aprofundar no Ownership/Borrowing e seguir meus estudos pela [documentação principal](https://doc.rust-lang.org/book) e pelo [Rust by examples](https://doc.rust-lang.org/rust-by-example).
 
 Quais funcionalidades, projetos, conceitos da linguagem Rust vocês recomendam para entender a linguagem Rust e se tornar minimamente proficiente?
-
-[[Interagindo com devs]]
