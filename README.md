@@ -10,6 +10,12 @@ It's built with [hugo SSG](https://gohugo.io/) and [PaperMod theme](https://gith
 
 Pre-requisites: [hugo](https://gohugo.io/installation/).
 
+Get the PaperMod theme locally:
+
+```bash
+git submodule update --init --recursive
+```
+
 Run the following command to start the development server:
 
 ```bash
