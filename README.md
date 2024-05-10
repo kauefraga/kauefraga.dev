@@ -10,13 +10,13 @@ It's built with [hugo SSG](https://gohugo.io/) and [PaperMod theme](https://gith
 
 Pre-requisites: [hugo](https://gohugo.io/installation/).
 
-Start development server.
+Run the following command to start the development server:
 
 ```bash
 hugo server
 ```
 
-With [hugo GitHub action](.github/workflows/hugo.yml), deploy on push to branch main.
+With this [hugo GitHub action](.github/workflows/hugo.yml), deploy on push to branch main.
 
 ## Contributing
 
