@@ -1,6 +1,6 @@
 +++
 title = 'Ruke, uma ferramenta de automação de tarefas'
-summary = 'Entenda um pouco do contexto do Ruke'
+summary = ' '
 date = 2024-05-05
 author = ['Kauê Fraga Rodrigues']
 +++

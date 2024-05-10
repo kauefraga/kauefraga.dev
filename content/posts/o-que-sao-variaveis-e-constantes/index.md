@@ -1,6 +1,6 @@
 +++
 title = 'O que são variáveis e constantes'
-summary = 'Aprenda o que são variáveis, constantes e como defini-las'
+summary = ' '
 date = 2024-01-28
 author = ['Kauê Fraga Rodrigues']
 +++
