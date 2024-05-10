@@ -1,5 +1,11 @@
-baseURL                = 'https://kauefraga.github.io/blog/'
-languageCode           = 'pt-BR'
-enableEmoji            = true
-title                  = 'Kauê Fraga Rodrigues'
-theme                  = 'PaperMod'
+baseURL = 'https://kauefraga.github.io/blog/'
+languageCode = 'pt-br'
+defaultContentLanguage = 'pt-br'
+enableEmoji = true
+title = 'Kauê Fraga Rodrigues'
+theme = 'PaperMod'
+
+[[menu.main]]
+identifier = "sobre"
+name = "Sobre"
+url = "/about/"
