@@ -9,3 +9,8 @@ theme = 'PaperMod'
 identifier = "sobre"
 name = "Sobre"
 url = "/about/"
+
+[[menu.main]]
+identifier = "projetos"
+name = "Projetos"
+url = "/projects/"
