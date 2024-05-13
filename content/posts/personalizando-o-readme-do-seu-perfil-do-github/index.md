@@ -117,8 +117,6 @@ Continuando...
 
 ## Recomendações
 
-Caso queira outras fontes:
-
 - [Como personalizar o seu perfil no Github (Readme) da Rafaella Ballerini](https://youtu.be/TsaLQAetPLU)
 - [Guia resumido da Laura Kibum](https://twitter.com/kibumLaura/status/1754254161615491117)
 
