@@ -109,6 +109,8 @@ Continuando...
 
 [![readme do cr-0w](images/readme-cr-0w.png)](https://github.com/cr-0w/cr-0w)
 
+[![readme do joevtap](images/readme-joevtap.png)](https://github.com/joevtap/joevtap)
+
 [![readme do erickcestari](images/readme-erickcestari.png)](https://github.com/erickcestari/erickcestari)
 
 [![readme da nftsz](images/readme-nftsz.png)](https://github.com/NFTSZ/NFTSZ)
