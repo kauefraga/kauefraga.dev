@@ -6,11 +6,9 @@ title = 'Kauê Fraga Rodrigues'
 theme = 'PaperMod'
 
 [[menu.main]]
-identifier = "sobre"
-name = "Sobre"
-url = "/about/"
+name = 'Sobre'
+url = '/sobre/'
 
 [[menu.main]]
-identifier = "projetos"
-name = "Projetos"
-url = "/projects/"
+name = 'Projetos'
+url = '/projetos/'

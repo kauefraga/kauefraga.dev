@@ -12,4 +12,3 @@ Aqui vai alguns projetos que eu já criei:
 - [lau-discord-bot](https://github.com/kauefraga/lau-discord-bot) (bot, go)
 - [comms-tracker](https://comms-tracker.netlify.app/) (site, vuejs)
 - [my blog](https://kauefraga.github.io/blog/) (site, hugo)
-
