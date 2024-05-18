@@ -19,7 +19,7 @@ git submodule update --init --recursive
 Run the following command to start the development server:
 
 ```bash
-hugo server
+hugo server -D
 ```
 
 With this [hugo GitHub action](.github/workflows/hugo.yml), deploy on push to branch main.
