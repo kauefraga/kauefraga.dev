@@ -44,4 +44,10 @@ Comecei a ler o livro "Entendendo Algoritmos", estou bem no começo onde ele fal
 
 Quero ir praticando os algoritmos e estruturas de dados.
 
+## Alterando commits específicos
+
+Enquanto eu commitava as alterações que fiz no blog, percebi que escrevi as mensagens de commit em inglês sendo que deveria ser em português. Dei um google e achei uma resposta no stackoverflow, ["How do I modify a specific commit?"](https://stackoverflow.com/questions/1186535/how-do-i-modify-a-specific-commit) (de 14 anos atrás).
+
+> Use `git rebase`.
+
 Obrigado por ler. Bom final de semana! ❤
