@@ -1,6 +1,7 @@
 +++
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+summary = ' '
 date = {{ .Date }}
-draft = true
 author = ['Kauê Fraga Rodrigues']
+draft = true
 +++
