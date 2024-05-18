@@ -2,7 +2,7 @@ baseURL = 'https://kauefraga.github.io/blog/'
 languageCode = 'pt-br'
 defaultContentLanguage = 'pt-br'
 enableEmoji = true
-title = 'Kauê Fraga Rodrigues'
+title = 'Blog do Kauê'
 theme = 'PaperMod'
 
 [[menu.main]]
@@ -12,3 +12,7 @@ url = '/sobre/'
 [[menu.main]]
 name = 'Projetos'
 url = '/projetos/'
+
+[[menu.main]]
+name = 'Notas'
+url = '/notas/'
