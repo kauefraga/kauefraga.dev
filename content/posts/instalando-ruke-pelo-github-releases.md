@@ -29,7 +29,7 @@ curl -OLs https://github.com/kauefraga/ruke/releases/latest/download/ruke-x86_64
 3. `-L` para seguir redirecionamentos ([curl -L](https://curl.se/docs/manpage.html#-L))
 4. `-s` para silenciar a saída ([curl -s](https://curl.se/docs/manpage.html#-s))
 
-Depois de instalar, tem que descompactar esse `.tar.gz` e remove-lo.
+Depois de baixar, tem que descompactar esse `.tar.gz` e remove-lo.
 
 ```sh
 tar -xzf ruke-x86_64-unknown-linux-gnu.tar.gz
