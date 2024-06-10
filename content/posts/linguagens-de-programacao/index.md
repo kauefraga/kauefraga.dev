@@ -8,9 +8,7 @@ draft = true
 
 De boa? Meu objetivo aqui é falar um pouco sobre linguagens de programação. O que são, quais tipos existem, como escolher uma linguagem para determinada situação e minha opinião em alguns debates relacionados.
 
-Vou começar contextualizando, então se quiser pular, vá para ["linguagens de programação"](#linguagens-de-programação) ou ["como escolher uma linguagem de programação"](#como-escolher-uma-linguagem-de-programação).
-
-Primeiramente, o que é uma linguagem de programação?
+Bora começar pelo começo, né!? O que é uma linguagem de programação?
 
 > Uma linguagem de programação é um conjunto de símbolos e regras usado para se comunicar com o computador.
 
@@ -18,17 +16,13 @@ Pense assim: uma linguagem de programação é como um idioma. Usamos o inglês 
 
 E que linguagem o computador entende?
 
-Sim, é a tal **linguagem de máquina** ou os "zeros e uns" que você já deve ter ouvido falar. Algo assim: `01011000100010100110100010101010001000001011000010111111010`. Enquanto nós vemos uma sequência de números binários o computador enxerga uma instrução ou sequência de instruções.
+Sim, é a tal **linguagem de máquina** ou os "zeros e uns" que você já deve ter ouvido falar. Algo assim: `01011000100010100110100010101010001000001011000010111111010`. Enquanto nós vemos uma sequência de números binários o computador "enxerga" uma instrução ou sequência de instruções.
 
 Beleza, mas onde entra a linguagem de programação nessa história?
 
-As linguagens de programação usam estruturas, palavras e simbologias conhecidas por nós humanos. Isso facilita o processo de comunicação. O código de uma linguagem de programação é transformado em linguagem de máquina quando passa por um compilador ou interpretador, dependendo do tipo da linguagem (compilada ou interpretado). AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+As linguagens de programação usam estruturas, palavras e simbologias conhecidas por nós humanos para dizer o que o computador tem que fazer. Como o computador só entende a linguagem de máquina, precisamos de um programa que "traduza" nosso código para a linguagem de máquina. Esse programa ou "tradutor" mágico se chama compilador ou interpretador.
 
-Antes de avançarmos, quero comentar sobre **sintaxe** e **semântica**.
-
-> A sintaxe é a forma, a estrutura das declarações de uma linguagem de programação, enquanto a semântica é o significado dessa forma/estrutura, o que ela quer dizer.
-
-Você diz "eu sou inteligente" ao invés de "eu inteligente" porque sabe que existe uma **estrutura** formal necessária para expressar seu pensamento. Você é inteligente, esse é o **significado** da sentença. Se você mudar o verbo "sou" para "estou" vai perceber que a estrutura se manteve, porém o significado não é o mesmo, em outras palavras, a semântica mudou mas a sintaxe continuou a mesma.
+A verdade é que não tem nada de mágico, entretanto meu objetivo não é te explicar como essa parte funciona, é um tópico interessante e denso. Caso tenha curiosidade procure sobre os processos de compilação, interpretação e até transpilação.
 
 ## Linguagens de programação
 
