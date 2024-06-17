@@ -1,12 +1,12 @@
-# Blog do Kauê
+# [kauefraga.com](https://kauefraga.github.io/kauefraga.com/) [![Twitter/X: @rkauefraga](https://img.shields.io/badge/twitter%2Fx-%40rkauefraga-blue)](https://x.com/rkauefraga) ![Discord: rustykaue](https://img.shields.io/badge/discord-rustykaue-5865F2)
 
-> Aqui você vai achar os artigos escritos por mim, incluindo suas imagens e trechos de código.
+> Aqui você vai achar meus projetos relevantes e os artigos escritos por mim, incluindo suas imagens e trechos de código.
 
-Eu também posto meus artigos no [dev.to](https://dev.to/kauefraga) e no [tabnews](http://tabnews.com.br/kauefraga).
+## Artigos (blog)
 
 Para construir este blog eu escolhi o [hugo](https://gohugo.io/) (um gerador de site estático) e o tema [papermod](https://github.com/adityatelange/hugo-PaperMod). Os artigos estão no diretório [`content/posts`](content/posts/), você pode ler artigos que ainda são rascunhos... 👀
 
-O site está hospedado no GitHub Pages e você pode ver ele clicando [aqui](https://kauefraga.github.io/blog/).
+Eu também posto meus artigos no [dev.to](https://dev.to/kauefraga) e no [tabnews](http://tabnews.com.br/kauefraga).
 
 ## Como rodar localmente
 
@@ -33,8 +33,3 @@ Você pode sugerir diferentes abordagens, apontar um erro de escrita, um link qu
 Te ajudei em um tópico específico? Considere uma estrela aqui nesse repositório.
 
 Obrigado pela atenção ❤
-
----
-
-[![Twitter/X: @rkauefraga](https://img.shields.io/badge/twitter%2Fx-%40rkauefraga-blue)](https://x.com/rkauefraga)
-![Discord: rustykaue](https://img.shields.io/badge/discord-rustykaue-5865F2)
