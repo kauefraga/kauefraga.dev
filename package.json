@@ -14,5 +14,8 @@
     "astro": "^4.11.0",
     "@astrojs/check": "^0.7.0",
     "typescript": "^5.5.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.2"
   }
 }
