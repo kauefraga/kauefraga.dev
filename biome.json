@@ -15,7 +15,8 @@
 		},
 		"formatter": {
 			"enabled": true,
-			"quoteStyle": "single"
+			"quoteStyle": "single",
+			"jsxQuoteStyle": "single"
 		}
 	}
 }
