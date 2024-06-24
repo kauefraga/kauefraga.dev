@@ -7,6 +7,7 @@ export default function Header() {
 			className='
 				flex flex-col items-center gap-2 p-4 font-mono
 				md:flex-row md:justify-between md:w-7/12 md:mx-auto
+				lg:text-lg
 			'
 		>
 			<div className='flex flex-col items-center md:items-start'>
