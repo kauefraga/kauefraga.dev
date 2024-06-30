@@ -1,0 +1,12 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'a'> {}
+
+const { ...props } = Astro.props;
+---
+
+<a
+  {...props}
+  class='hover:underline decoration-violet-600 decoration-2'
+><slot /></a>
