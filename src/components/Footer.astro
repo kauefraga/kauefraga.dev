@@ -5,7 +5,7 @@ import NavLink from './NavLink.astro';
 
 <footer
   class="
-    flex flex-col items-center gap-6 bg-zinc-900 text-white md:text-lg py-6
+    flex flex-col items-center gap-12 bg-zinc-900 text-white md:text-lg py-6
     md:flex-row md:justify-center
   "
 >
@@ -13,22 +13,22 @@ import NavLink from './NavLink.astro';
     <h2>Kauê Fraga Rodrigues</h2>
     <ul class="flex gap-3 text-3xl">
       <li>
-        <a href="https://www.linkedin.com/in/kauefraga/">
+        <a href="https://www.linkedin.com/in/kauefraga/" title="Meu LinkedIn" aria-label="Meu LinkedIn">
           <Icon name="mdi:linkedin" class="hover:text-violet-600" />
         </a>
       </li>
       <li>
-        <a href="https://github.com/kauefraga">
+        <a href="https://github.com/kauefraga" title="Meu GitHub" aria-label="Meu GitHub">
           <Icon name="mdi:github" class="hover:text-violet-600" />
         </a>
       </li>
       <li>
-        <a href="https://x.com/rkauefraga">
+        <a href="https://x.com/rkauefraga" title="Meu Twitter/X" aria-label="Meu Twitter/X">
           <Icon name="mdi:twitter" class="hover:text-violet-600" />
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/kauefragarodrigues/">
+        <a href="https://www.instagram.com/kauefragarodrigues/" title="Meu Instagram" aria-label="Meu Instagram">
           <Icon name="mdi:instagram" class="hover:text-violet-600" />
         </a>
       </li>
@@ -37,8 +37,8 @@ import NavLink from './NavLink.astro';
   </aside>
 
   <nav class="flex gap-5 md:flex-col md:gap-1 font-mono">
-    <NavLink href="/about">/about</NavLink>
-    <NavLink href="/contact">/contact</NavLink>
-    <NavLink href="https://github.com/kauefraga/kauefraga.com">/repository</NavLink>
+    <NavLink href="/about">/sobre</NavLink>
+    <NavLink href="/contact">/contato</NavLink>
+    <NavLink href="https://github.com/kauefraga/kauefraga.com">/repositório</NavLink>
   </nav>
 </footer>

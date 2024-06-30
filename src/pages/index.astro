@@ -1,4 +1,5 @@
 ---
+import { ReactTyped } from 'react-typed';
 import Link from '../components/Link.astro';
 import Layout from '../layouts/Layout.astro';
 
@@ -16,7 +17,19 @@ import Kaue from '../assets/kaue.png';
 				loading="eager"
 			/>
 			<h1 class="text-2xl lg:text-3xl font-medium">Kauê Fraga Rodrigues</h1>
-			<p class="text-md">Desenvolvedor de Software</p>
+			<ReactTyped
+				strings={[
+					'Desenvolvedor de Software',
+					'Mago do Código',
+					'Desenvolvedor Back end',
+					'Rustáceo',
+					'Gopher',
+					'Typescripto',
+				]}
+				typeSpeed={90}
+				loop
+				client:visible
+			/>
 		</header>
 
 		<ul class="space-y-3">
