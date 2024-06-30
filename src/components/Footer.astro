@@ -1,59 +1,42 @@
 ---
+import { Icon } from 'astro-icon/components';
 import NavLink from './NavLink';
-import { Image } from 'astro:assets';
-import Linkedin from '../assets/linkedin.svg';
-import GitHub from '../assets/github.svg';
-import Instagram from '../assets/instagram.svg';
-import Twitter from '../assets/twitter.svg';
 ---
 
 <footer
-  class='
-    flex flex-col items-center gap-5 p-4 font-mono fixed bottom-0 w-full justify-center
-    md:flex-row md:gap-12
-    lg:text-lg
-  '
+  class="
+    flex flex-col items-center gap-6 bg-zinc-900 text-white md:text-lg py-6
+    md:flex-row md:justify-center
+  "
 >
   <aside class="space-y-2">
     <h2>Kauê Fraga Rodrigues</h2>
-    <ul class="flex gap-3">
+    <ul class="flex gap-3 text-3xl">
       <li>
         <a href="https://www.linkedin.com/in/kauefraga/">
-          <Image
-            src={Linkedin}
-            alt="Ícone do LinkedIn"
-          />
+          <Icon name="mdi:linkedin" class="hover:text-violet-600" />
         </a>
       </li>
       <li>
         <a href="https://github.com/kauefraga">
-          <Image
-            src={GitHub}
-            alt="Ícone do GitHub"
-          />
+          <Icon name="mdi:github" class="hover:text-violet-600" />
         </a>
       </li>
       <li>
         <a href="https://x.com/rkauefraga">
-          <Image
-            src={Twitter}
-            alt="Ícone do Twitter"
-          />
+          <Icon name="mdi:twitter" class="hover:text-violet-600" />
         </a>
       </li>
       <li>
         <a href="https://www.instagram.com/kauefragarodrigues/">
-          <Image
-            src={Instagram}
-            alt="Ícone do Instagram"
-          />
+          <Icon name="mdi:instagram" class="hover:text-violet-600" />
         </a>
       </li>
     </ul>
     <p>Feito por mim, 2024</p>
   </aside>
 
-  <nav class="flex flex-col gap-1">
+  <nav class="flex gap-5 md:flex-col md:gap-1 font-mono">
     <NavLink href="/about">/about</NavLink>
     <NavLink href="/contact">/contact</NavLink>
     <NavLink href="https://github.com/kauefraga/kauefraga.com">/repository</NavLink>
