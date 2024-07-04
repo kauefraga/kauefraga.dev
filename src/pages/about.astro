@@ -1,5 +1,6 @@
 ---
 import Image from 'astro/components/Image.astro';
+import NavLink from '../components/NavLink.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -18,7 +19,7 @@ import Layout from '../layouts/Layout.astro';
     <Image
       class="mx-auto"
       width="350"
-      height="1"
+      height="350"
       src="https://skillicons.dev/icons?i=go,ts,python,postgresql,mongodb,docker"
       alt="go,ts,python,postgresql,mongodb,docker"
       loading="eager"
@@ -30,7 +31,7 @@ import Layout from '../layouts/Layout.astro';
     <Image
       class="mx-auto"
       width="350"
-      height="1"
+      height="350"
       src="https://skillicons.dev/icons?i=html,css,react,next,tailwindcss,astro"
       alt="html,css,react,next,tailwindcss,astro"
       loading="eager"
@@ -49,8 +50,11 @@ import Layout from '../layouts/Layout.astro';
     para o <a href="/blog" class="underline" target="_blank">meu blog</a>,
     <a href="https://dev.to/kauefraga" class="underline" target="_blank">dev.to</a>
     e <a href="https://tabnews.com.br/kauefraga" class="underline" target="_blank">TabNews</a>,
-    além disso comecei a compartilhar alguns momentos e projetos meus no
+    além de compartilhar alguns momentos e projetos meus no
     <a href="https://x.com/rkauefraga" class="underline" target="_blank">Twitter</a>
     e no <a href="https://www.linkedin.com/in/kauefraga/" class="underline" target="_blank">LinkedIn</a>.</p>
+
+    <p>Em <a href="/projects" class="underline">projetos</a> você pode ver as
+    aplicações que construi melhorar a vida das pessoas - e me aprimorar.</p>
   </main>
 </Layout>
