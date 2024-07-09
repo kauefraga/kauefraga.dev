@@ -10,8 +10,8 @@ const { title, postTitle } = Astro.props;
 ---
 
 <Layout title={title ?? postTitle}>
-  <main class="mx-auto w-full max-w-3xl flex-grow space-y-5 p-6 lg:text-lg">
-    <h1 class="max-w-lg text-pretty text-2xl md:text-5xl">{postTitle}</h1>
+  <article class="space-y-5 lg:text-lg">
+    <h1 class="max-w-xl text-pretty text-2xl md:text-5xl">{postTitle}</h1>
     <slot />
-  </main>
+  </article>
 </Layout>
