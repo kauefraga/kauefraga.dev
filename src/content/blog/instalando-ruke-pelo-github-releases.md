@@ -1,8 +1,8 @@
 ---
-layout: '../../layouts/Layout.astro'
+
 title: 'Instalando o Ruke pelo GitHub Releases'
 publishDate: 2024-05-20
-author: 'Kauê Fraga Rodrigues'
+author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 
 Opa! Bão? Segundei aqui com *scripting* (bash e powershell).

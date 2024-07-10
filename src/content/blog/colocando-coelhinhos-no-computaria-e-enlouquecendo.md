@@ -1,8 +1,8 @@
 ---
-layout: '../../layouts/Layout.astro'
+
 title: 'Colocando coelhinhos no computaria e enlouquecendo'
 publishDate: 2024-04-06
-author: 'Kauê Fraga Rodrigues'
+author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 
 Publicado originalmente no [Computaria](https://computaria.gitlab.io/blog/2024/04/06/colocando-coelhinhos-no-computaria)

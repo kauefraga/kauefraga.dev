@@ -1,8 +1,8 @@
 ---
-layout: '../../layouts/Layout.astro'
+
 title: 'Introdução ao Rust'
 publishDate: 2024-02-18
-author: 'Kauê Fraga Rodrigues'
+author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 
 Olá! Se você quer aprender ou está estudando a linguagem de programação Rust assim como eu, acho que aqui consegui sintetizar bem a linguagem nesse texto introdutório. Bora lá!!

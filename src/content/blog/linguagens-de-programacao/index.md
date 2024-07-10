@@ -1,8 +1,8 @@
 ---
-layout: '../../layouts/Layout.astro'
+
 title: 'Escolhendo uma linguagem de programação'
 publishDate: 2024-06-17
-author: 'Kauê Fraga Rodrigues'
+author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 draft: true
 ---
 

@@ -1,8 +1,8 @@
 ---
-layout: '../../layouts/Layout.astro'
+
 title: 'Desbravando o poder do markdown'
 publishDate: 2024-08-01
-author: 'Kauê Fraga Rodrigues'
+author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 draft: true
 ---
 

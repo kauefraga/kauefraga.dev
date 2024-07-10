@@ -1,113 +1,124 @@
 ---
 import TagList from '../components/TagList.astro';
-import PostLayout from '../layouts/PostLayout.astro';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<PostLayout title="Projetos | Kauê Fraga Rodrigues" postTitle="Projetos">
-  <section class="space-y-2">
-    <h2 class="flex gap-1.5">
-      <a
-        href="https://github.com/kauefraga/ruke"
-        target="_blank"
-        class="underline">Ruke</a
-      >
-      <span class="text-gray-600"
-        >(uma ferramenta para automação de processos)</span
-      >
-    </h2>
+<Layout title="Projetos | Kauê Fraga Rodrigues">
+  <main class="space-y-5 lg:text-lg">
+    <h1 class="max-w-lg text-pretty text-2xl md:text-5xl">Projetos</h1>
 
-    <p>
-      O desenvolvimento do "Ruke" foi repleto de desafios e aprendizados. A
-      documentação exigiu dedicação para ser clara e útil, enquanto a
-      distribuição multiplataforma me forçou a criar scripts e pipelines de
-      CI/CD capazes de fazer a entrega do programa final e facilitar a
-      instalação dele. Melhorar a experiência do usuário, com flags intuitivas,
-      saídas claras e prompts interativos, foi fundamental. Além disso, lidar
-      com erros de forma eficiente foi crucial para garantir uma ferramenta
-      confiável e fácil de usar. Cada obstáculo superado me fez valorizar ainda
-      mais o processo e o produto final.
-    </p>
+    <section class="space-y-2">
+      <h2 class="flex gap-1.5">
+        <a
+          href="https://github.com/kauefraga/ruke"
+          target="_blank"
+          class="underline">Ruke</a
+        >
+        <span class="text-gray-600"
+          >(uma ferramenta para automação de processos)</span
+        >
+      </h2>
 
-    <TagList
-      tags={['rust', 'cli tool', 'documentation', 'user/developer experience']}
-    />
-  </section>
+      <p>
+        O desenvolvimento do "Ruke" foi repleto de desafios e aprendizados. A
+        documentação exigiu dedicação para ser clara e útil, enquanto a
+        distribuição multiplataforma me forçou a criar scripts e pipelines de
+        CI/CD capazes de fazer a entrega do programa final e facilitar a
+        instalação dele. Melhorar a experiência do usuário, com flags
+        intuitivas, saídas claras e prompts interativos, foi fundamental. Além
+        disso, lidar com erros de forma eficiente foi crucial para garantir uma
+        ferramenta confiável e fácil de usar. Cada obstáculo superado me fez
+        valorizar ainda mais o processo e o produto final.
+      </p>
 
-  <section class="space-y-2">
-    <h2 class="flex gap-1.5">
-      <a
-        href="https://github.com/kauefraga/polvinho"
-        target="_blank"
-        class="underline">Polvinho</a
-      >
-      <span class="text-gray-600">(um site para gestão de trabalhos)</span>
-    </h2>
+      <TagList
+        tags={[
+          'rust',
+          'cli tool',
+          'documentation',
+          'user/developer experience',
+        ]}
+      />
+    </section>
 
-    <p>Em construção...</p>
+    <section class="space-y-2">
+      <h2 class="flex gap-1.5">
+        <a
+          href="https://github.com/kauefraga/polvinho"
+          target="_blank"
+          class="underline">Polvinho</a
+        >
+        <span class="text-gray-600">(um site para gestão de trabalhos)</span>
+      </h2>
 
-    <TagList tags={['typescript', 'react', 'nextjs']} />
-  </section>
+      <p>Em construção...</p>
 
-  <section class="space-y-2">
-    <h2 class="flex gap-1.5">
-      <a
-        href="https://github.com/FelipeMCassiano/gorvus"
-        target="_blank"
-        class="underline">Gorvus</a
-      >
-      <span class="text-gray-600"
-        >(uma ferramenta para geração de configurações Docker)</span
-      >
-    </h2>
+      <TagList tags={['typescript', 'react', 'nextjs']} />
+    </section>
 
-    <p>
-      No projeto open source "Gorvus", enfrentar o código-fonte de outra pessoa
-      foi um dos principais desafios. Me adaptar ao estilo e compreender o
-      objetivo do projeto exigiu empenho e paciência. Parte desse processo
-      incluiu a comunicação e a sugestão de alterações por meio de issues e pull
-      requests no GitHub, o que foi fundamental para a colaboração eficaz.
-      Minhas contribuições foram diversas: modifiquei a estrutura do projeto em
-      Go, melhorei a experiência do usuário, refatorei o código-fonte e
-      introduzi boas práticas. Cada um desses passos não só aprimorou o Gorvus,
-      mas também engrandeceu minha própria experiência como desenvolvedor.
-    </p>
+    <section class="space-y-2">
+      <h2 class="flex gap-1.5">
+        <a
+          href="https://github.com/FelipeMCassiano/gorvus"
+          target="_blank"
+          class="underline">Gorvus</a
+        >
+        <span class="text-gray-600"
+          >(uma ferramenta para geração de configurações Docker)</span
+        >
+      </h2>
 
-    <TagList tags={['go', 'cli tool', 'open source']} />
-  </section>
+      <p>
+        No projeto open source "Gorvus", enfrentar o código-fonte de outra
+        pessoa foi um dos principais desafios. Me adaptar ao estilo e
+        compreender o objetivo do projeto exigiu empenho e paciência. Parte
+        desse processo incluiu a comunicação e a sugestão de alterações por meio
+        de issues e pull requests no GitHub, o que foi fundamental para a
+        colaboração eficaz. Minhas contribuições foram diversas: modifiquei a
+        estrutura do projeto em Go, melhorei a experiência do usuário, refatorei
+        o código-fonte e introduzi boas práticas. Cada um desses passos não só
+        aprimorou o Gorvus, mas também engrandeceu minha própria experiência
+        como desenvolvedor.
+      </p>
 
-  <section class="space-y-2">
-    <h2 class="flex gap-1.5">
-      <a href="https://inuc.netlify.app/" target="_blank" class="underline">
-        Inu
-      </a>
-      <span class="text-gray-600">(um sistema fullstack de login/logout)</span>
-    </h2>
+      <TagList tags={['go', 'cli tool', 'open source']} />
+    </section>
 
-    <p>
-      O desenvolvimento do "Inu", um sistema de login/logout fullstack com Vue e
-      Go, me trouxe muitos desafios e aprendizados valiosos. Lidar com
-      autenticação e autorização foi essencial para garantir a segurança do
-      sistema, sendo implementado com tokens JWT. A organização
-      multirepositório, dividindo o projeto em inus (servidor) e inuc (cliente),
-      exigiu uma gestão cuidadosa para manter a coesão e a eficiência do código.
-      Construir um serviço robusto com Go foi uma experiência enriquecedora,
-      ampliando minhas habilidades e conhecimentos na criação de aplicações
-      escaláveis e eficientes.
-    </p>
+    <section class="space-y-2">
+      <h2 class="flex gap-1.5">
+        <a href="https://inuc.netlify.app/" target="_blank" class="underline">
+          Inu
+        </a>
+        <span class="text-gray-600">(um sistema fullstack de login/logout)</span
+        >
+      </h2>
 
-    <p>
-      Links: <a
-        href="https://github.com/kauefraga/inus"
-        target="_blank"
-        class="underline">Inus (servidor)</a
-      >,
-      <a
-        href="https://github.com/kauefraga/inuc"
-        target="_blank"
-        class="underline">Inuc (cliente)</a
-      >
-    </p>
+      <p>
+        O desenvolvimento do "Inu", um sistema de login/logout fullstack com Vue
+        e Go, me trouxe muitos desafios e aprendizados valiosos. Lidar com
+        autenticação e autorização foi essencial para garantir a segurança do
+        sistema, sendo implementado com tokens JWT. A organização
+        multirepositório, dividindo o projeto em inus (servidor) e inuc
+        (cliente), exigiu uma gestão cuidadosa para manter a coesão e a
+        eficiência do código. Construir um serviço robusto com Go foi uma
+        experiência enriquecedora, ampliando minhas habilidades e conhecimentos
+        na criação de aplicações escaláveis e eficientes.
+      </p>
 
-    <TagList tags={['go', 'fiber', 'auth', 'jwt', 'vue']} />
-  </section>
-</PostLayout>
+      <p>
+        Links: <a
+          href="https://github.com/kauefraga/inus"
+          target="_blank"
+          class="underline">Inus (servidor)</a
+        >,
+        <a
+          href="https://github.com/kauefraga/inuc"
+          target="_blank"
+          class="underline">Inuc (cliente)</a
+        >
+      </p>
+
+      <TagList tags={['go', 'fiber', 'auth', 'jwt', 'vue']} />
+    </section>
+  </main>
+</Layout>

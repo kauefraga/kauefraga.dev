@@ -1,8 +1,8 @@
 ---
-layout: '../../layouts/Layout.astro'
+
 title: 'Eco, minha implementação em Rust do programa echo'
 publishDate: 2024-02-24
-author: 'Kauê Fraga Rodrigues'
+author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 
 Links: [TabNews](https://www.tabnews.com.br/kauefraga/eco-minha-implementacao-em-rust-do-programa-echo), [DevTo](https://dev.to/kauefraga/eco-minha-implementacao-em-rust-do-programa-echo-34jh) e [Twitter/X](https://twitter.com/rkauefraga/status/1761391229986599342).

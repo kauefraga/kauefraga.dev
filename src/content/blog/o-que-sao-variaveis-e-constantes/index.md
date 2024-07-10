@@ -1,8 +1,8 @@
 ---
-layout: '../../layouts/Layout.astro'
+
 title: 'O que são variáveis e constantes'
 publishDate: 2024-01-28
-author: 'Kauê Fraga Rodrigues'
+author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 
 Veja a postagem do twitter/x [aqui](https://twitter.com/rkauefraga/status/1751298782975648026) e veja a postagem do tabnews [aqui](https://www.tabnews.com.br/kauefraga/o-que-sao-variaveis-e-constantes). Comentei [no TabNews](https://www.tabnews.com.br/kauefraga/o-basico-das-linguagens-de-programacao) também.

@@ -1,9 +1,8 @@
-+++
-title = 'Primeira nota do blog'
-
-publishDate = 2024-05-18T12:12:40-03:00
-author = ['Kauê Fraga Rodrigues']
-+++
+---
+title: 'Primeira nota do blog'
+publishDate: 2024-05-18
+author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
+---
 
 Opa! Tudo certo? Espero que sim.
 

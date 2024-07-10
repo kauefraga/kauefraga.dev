@@ -1,8 +1,8 @@
 ---
-layout: '../../layouts/Layout.astro'
+
 title: 'Funcionalidades do Rust'
 publishDate: 2024-02-19
-author: 'Kauê Fraga Rodrigues'
+author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 
 Olá! Se você quer saber um pouco mais sobre as **principais** funcionalidades do Rust, então acho que posso ajudar. Bora 👊
