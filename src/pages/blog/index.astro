@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+const posts = await getCollection('blog', (post) => !post.data.isDraft);
+---
+
+<Layout title="Blog | Kauê Fraga Rodrigues">
+  <ul class="list-inside list-disc md:text-lg">
+    {
+      posts.map((post) => (
+        <li class="gap-2">
+          <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
