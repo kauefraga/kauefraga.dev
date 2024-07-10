@@ -1,9 +1,9 @@
-+++
-title = 'Funcionalidades do Rust'
-summary = ' '
-date = 2024-02-19
-author = ['Kauê Fraga Rodrigues']
-+++
+---
+layout: '../../layouts/Layout.astro'
+title: 'Funcionalidades do Rust'
+publishDate: 2024-02-19
+author: 'Kauê Fraga Rodrigues'
+---
 
 Olá! Se você quer saber um pouco mais sobre as **principais** funcionalidades do Rust, então acho que posso ajudar. Bora 👊
 

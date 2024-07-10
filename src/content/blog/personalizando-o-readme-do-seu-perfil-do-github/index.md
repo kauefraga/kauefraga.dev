@@ -1,9 +1,8 @@
-+++
-title = 'Personalizando o README do seu perfil do GitHub'
-summary = ' '
-date = 2024-05-12
-author = ['Kauê Fraga Rodrigues']
-+++
+---
+title: 'Personalizando o README do seu perfil do GitHub'
+publishDate: 2024-05-12
+author: 'Kauê Fraga Rodrigues'
+---
 
 Opa, tranquilo? Bora deixar o README do teu GitHub bonitão!
 

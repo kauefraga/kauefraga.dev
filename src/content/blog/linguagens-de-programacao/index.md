@@ -1,10 +1,10 @@
-+++
-title = 'Escolhendo uma linguagem de programação'
-summary = 'O que são, quais os tipos, como escolher e alguns debates.' # descubra como eu escolho qual linguagem de programação eu vou aprender
-date = 2024-06-17
-author = ['Kauê Fraga Rodrigues']
-draft = true
-+++
+---
+layout: '../../layouts/Layout.astro'
+title: 'Escolhendo uma linguagem de programação'
+publishDate: 2024-06-17
+author: 'Kauê Fraga Rodrigues'
+draft: true
+---
 
 De boa? Este é um guia tanto para aqueles que querem escolher a primeira linguagem de programação quanto para os que querem estudar sua enésima linguagem. Espero que te ajude!
 

@@ -1,9 +1,9 @@
-+++
-title = 'Introdução ao markdown e aos READMEs'
-summary = ' '
-date = 2024-03-18
-author = ['Kauê Fraga Rodrigues']
-+++
+---
+layout: '../../layouts/Layout.astro'
+title: 'Introdução ao markdown e aos READMEs'
+publishDate: 2024-03-18
+author: 'Kauê Fraga Rodrigues'
+---
 
 Olá, tudo certo?
 

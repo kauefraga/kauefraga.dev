@@ -1,10 +1,9 @@
-+++
-title = 'Instalando o Ruke pelo GitHub Releases'
-summary = 'Criei dois scripts para instalar arquivos direto do GitHub Releases em diferentes plataformas.'
-date = 2024-05-20
-author = ['Kauê Fraga Rodrigues']
-keywords = ['scripting', 'bash', 'powershell']
-+++
+---
+layout: '../../layouts/Layout.astro'
+title: 'Instalando o Ruke pelo GitHub Releases'
+publishDate: 2024-05-20
+author: 'Kauê Fraga Rodrigues'
+---
 
 Opa! Bão? Segundei aqui com *scripting* (bash e powershell).
 

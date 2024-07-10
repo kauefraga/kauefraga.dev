@@ -1,9 +1,9 @@
-+++
-title = 'Ruke, uma ferramenta de automação de tarefas'
-summary = ' '
-date = 2024-05-05
-author = ['Kauê Fraga Rodrigues']
-+++
+---
+layout: '../../layouts/Layout.astro'
+title: 'Ruke, uma ferramenta de automação de tarefas'
+publishDate: 2024-05-05
+author: 'Kauê Fraga Rodrigues'
+---
 
 Opa, tudo bem? Queria compartilhar um projeto que estou fazendo e mantendo.
 

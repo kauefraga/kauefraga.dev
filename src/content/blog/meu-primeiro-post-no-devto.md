@@ -1,9 +1,9 @@
-+++
-title = 'Meu primeiro post no dev.to'
-summary = ' '
-date = 2024-02-18
-author = ['Kauê Fraga Rodrigues']
-+++
+---
+layout: '../../layouts/Layout.astro'
+title: 'Meu primeiro post no dev.to'
+publishDate: 2024-02-18
+author: 'Kauê Fraga Rodrigues'
+---
 
 A verdade é que escrevi para o TabNews, copiei e colei no DevTo, mas ninguém precisa saber... 😂
 

@@ -1,9 +1,9 @@
-+++
-title = 'Eco: minha implementação em Rust do programa echo'
-summary = ' '
-date = 2024-02-24
-author = ['Kauê Fraga Rodrigues']
-+++
+---
+layout: '../../layouts/Layout.astro'
+title: 'Eco, minha implementação em Rust do programa echo'
+publishDate: 2024-02-24
+author: 'Kauê Fraga Rodrigues'
+---
 
 Links: [TabNews](https://www.tabnews.com.br/kauefraga/eco-minha-implementacao-em-rust-do-programa-echo), [DevTo](https://dev.to/kauefraga/eco-minha-implementacao-em-rust-do-programa-echo-34jh) e [Twitter/X](https://twitter.com/rkauefraga/status/1761391229986599342).
 

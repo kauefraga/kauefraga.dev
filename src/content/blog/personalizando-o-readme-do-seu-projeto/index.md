@@ -1,9 +1,9 @@
-+++
-title = 'Personalizando o README do seu projeto'
-summary = ' '
-date = 2024-03-24
-author = ['Kauê Fraga Rodrigues']
-+++
+---
+layout: '../../layouts/Layout.astro'
+title: 'Personalizando o README do seu projeto'
+publishDate: 2024-03-24
+author: 'Kauê Fraga Rodrigues'
+---
 
 Opa, tudo tranquilo?
 
