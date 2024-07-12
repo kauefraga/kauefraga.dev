@@ -2,7 +2,7 @@ import { defineCollection, z } from 'astro:content';
 
 const schema = z.object({
   title: z.string(),
-  isDraft: z.boolean().default(false),
+  draft: z.boolean().default(false),
   publishDate: z.date(),
   author: z.string().default('Kauê Fraga Rodrigues <rkauefraga@gmail.com>'),
 });
