@@ -3,11 +3,8 @@ import { Icon } from 'astro-icon/components';
 import NavLink from './NavLink.astro';
 ---
 
-<footer
-  class="flex flex-col items-center gap-6 py-6 text-lg md:flex-row md:justify-center md:gap-12"
->
+<footer class="flex flex-col items-center gap-6 py-6 md:justify-center">
   <aside class="space-y-2">
-    <h2>Kauê Fraga Rodrigues</h2>
     <ul class="flex gap-3 text-3xl">
       <li>
         <a
@@ -15,7 +12,7 @@ import NavLink from './NavLink.astro';
           title="Meu LinkedIn"
           aria-label="Meu LinkedIn"
         >
-          <Icon name="mdi:linkedin" class="hover:text-violet-600" />
+          <Icon name="mdi:linkedin" size={36} class="hover:text-violet-600" />
         </a>
       </li>
       <li>
@@ -24,7 +21,7 @@ import NavLink from './NavLink.astro';
           title="Meu GitHub"
           aria-label="Meu GitHub"
         >
-          <Icon name="mdi:github" class="hover:text-violet-600" />
+          <Icon name="mdi:github" size={36} class="hover:text-violet-600" />
         </a>
       </li>
       <li>
@@ -33,7 +30,7 @@ import NavLink from './NavLink.astro';
           title="Meu Twitter/X"
           aria-label="Meu Twitter/X"
         >
-          <Icon name="mdi:twitter" class="hover:text-violet-600" />
+          <Icon name="mdi:twitter" size={36} class="hover:text-violet-600" />
         </a>
       </li>
       <li>
@@ -42,17 +39,18 @@ import NavLink from './NavLink.astro';
           title="Meu Instagram"
           aria-label="Meu Instagram"
         >
-          <Icon name="mdi:instagram" class="hover:text-violet-600" />
+          <Icon name="mdi:instagram" size={36} class="hover:text-violet-600" />
         </a>
       </li>
     </ul>
-    <p>Feito por mim, 2024</p>
   </aside>
 
-  <nav class="hidden flex-col gap-1 font-mono md:flex">
-    <NavLink href="/about">/sobre</NavLink>
-    <NavLink href="/contact">/contato</NavLink>
-    <NavLink href="https://github.com/kauefraga/kauefraga.com">
+  <hr class="border-1 w-1/2 border-gray-400 shadow" />
+
+  <nav class="flex gap-4 font-mono">
+    <NavLink href="/about" inverted>/sobre</NavLink>
+    <NavLink href="/contact" inverted>/contato</NavLink>
+    <NavLink href="https://github.com/kauefraga/kauefraga.com" inverted>
       /repositório
     </NavLink>
   </nav>
