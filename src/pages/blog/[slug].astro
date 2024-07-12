@@ -1,0 +1,35 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+
+  return posts.map((post) => ({
+    params: {
+      slug: post.slug,
+    },
+    props: {
+      post,
+    },
+  }));
+}
+
+const { data, render } = Astro.props.post;
+const { Content } = await render();
+---
+
+<Layout title={`${data.author} | Blog do Kauê`}>
+  <header>
+    <p>{data.author.split('<')[0]}</p>
+  </header>
+
+  <article class="space-y-4 md:text-lg">
+    <Content />
+  </article>
+</Layout>

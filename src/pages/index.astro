@@ -1,0 +1,51 @@
+---
+import { ReactTyped } from 'react-typed';
+import Card from '../components/Card.astro';
+import Layout from '../layouts/Layout.astro';
+
+import { Image } from 'astro:assets';
+import Kaue from '../assets/kaue.png';
+---
+
+<Layout title="Kauê Fraga Rodrigues">
+  <main class="flex flex-grow flex-col items-center gap-6 lg:text-lg">
+    <header class="flex flex-col items-center gap-2">
+      <Image
+        class="h-full max-h-48 w-full max-w-40 rounded-lg"
+        src={Kaue}
+        alt="Imagem de perfil do Kauê"
+        loading="eager"
+      />
+      <h1 class="text-2xl font-medium lg:text-3xl">Kauê Fraga Rodrigues</h1>
+      <ReactTyped
+        className="text-violet-800"
+        strings={[
+          'Desenvolvedor de Software',
+          'Mago do Código',
+          'Desenvolvedor Back end',
+          'Rustáceo',
+          'Gopher',
+          'Typescripto',
+        ]}
+        typeSpeed={90}
+        loop
+        client:visible
+      />
+    </header>
+
+    <ul class="space-y-3">
+      <Card href="https://github.com/kauefraga/ruke">
+        Ruke, uma ferramenta simples
+      </Card>
+      <Card href="https://github.com/kauefraga/my-dotfiles">
+        Minhas configurações
+      </Card>
+      <Card href="https://dev.to/kauefraga/aprenda-a-fazer-um-readme-4n36">
+        Série sobre markdown e READMEs
+      </Card>
+      <Card href="https://github.com/kauefraga/ariprog">
+        Biblioteca de progressão aritmética
+      </Card>
+    </ul>
+  </main>
+</Layout>

@@ -1,0 +1,58 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import NavLink from '../../components/NavLink.astro';
+
+const shouldIncludeDrafts = process.env.NODE_ENV === 'development';
+
+const posts = await getCollection(
+  'blog',
+  shouldIncludeDrafts ? (post) => !post.data.draft : undefined
+);
+const sortedPosts = posts.sort(
+  (a, b) => +b.data.publishDate - +a.data.publishDate
+);
+
+const months = [
+  'jan.',
+  'fev.',
+  'mar.',
+  'abr.',
+  'mai.',
+  'jun.',
+  'jul.',
+  'ago.',
+  'set.',
+  'out.',
+  'nov.',
+  'dez.',
+];
+---
+
+<Layout title="Blog | Kauê Fraga Rodrigues">
+  <main class="space-y-5">
+    <h1 class="text-2xl font-bold text-violet-800 md:text-4xl">Posts</h1>
+
+    <ul class="flex flex-col gap-3">
+      {
+        sortedPosts.map((post) => {
+          const day = post.data.publishDate
+            .getDate()
+            .toString()
+            .padStart(2, '0');
+          const month = months[post.data.publishDate.getMonth()];
+          const year = post.data.publishDate.getFullYear();
+
+          return (
+            <li class="flex flex-wrap gap-x-6 font-mono">
+              <p>
+                {day} {month} {year}
+              </p>
+              <NavLink href={`/blog/${post.slug}`}>{post.data.title}</NavLink>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </main>
+</Layout>

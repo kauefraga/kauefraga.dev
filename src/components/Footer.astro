@@ -1,0 +1,57 @@
+---
+import { Icon } from 'astro-icon/components';
+import NavLink from './NavLink.astro';
+---
+
+<footer class="flex flex-col items-center gap-6 py-6 md:justify-center">
+  <aside class="space-y-2">
+    <ul class="flex gap-3 text-3xl">
+      <li>
+        <a
+          href="https://www.linkedin.com/in/kauefraga/"
+          title="Meu LinkedIn"
+          aria-label="Meu LinkedIn"
+        >
+          <Icon name="mdi:linkedin" size={36} class="hover:text-violet-600" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/kauefraga"
+          title="Meu GitHub"
+          aria-label="Meu GitHub"
+        >
+          <Icon name="mdi:github" size={36} class="hover:text-violet-600" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://x.com/rkauefraga"
+          title="Meu Twitter/X"
+          aria-label="Meu Twitter/X"
+        >
+          <Icon name="mdi:twitter" size={36} class="hover:text-violet-600" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.instagram.com/kauefragarodrigues/"
+          title="Meu Instagram"
+          aria-label="Meu Instagram"
+        >
+          <Icon name="mdi:instagram" size={36} class="hover:text-violet-600" />
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <hr class="border-1 w-4/5 border-gray-400 md:w-1/2" />
+
+  <nav class="flex gap-4 font-mono">
+    <NavLink href="/about" inverted>/sobre</NavLink>
+    <NavLink href="/contact" inverted>/contato</NavLink>
+    <NavLink href="https://github.com/kauefraga/kauefraga.com" inverted>
+      /repositório
+    </NavLink>
+  </nav>
+</footer>
