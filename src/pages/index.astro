@@ -1,6 +1,6 @@
 ---
 import { ReactTyped } from 'react-typed';
-import CardLink from '../components/CardLink.astro';
+import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
 
 import { Image } from 'astro:assets';
@@ -34,28 +34,18 @@ import Kaue from '../assets/kaue.png';
     </header>
 
     <ul class="space-y-3">
-      <li>
-        <CardLink href="https://github.com/kauefraga/ruke"
-          >Ruke, uma ferramenta simples</CardLink
-        >
-      </li>
-      <li>
-        <CardLink href="https://github.com/kauefraga/my-dotfiles">
-          Minhas configurações
-        </CardLink>
-      </li>
-      <li>
-        <CardLink
-          href="https://dev.to/kauefraga/aprenda-a-fazer-um-readme-4n36"
-        >
-          Série sobre markdown e READMEs
-        </CardLink>
-      </li>
-      <li>
-        <CardLink href="https://github.com/kauefraga/ariprog">
-          Biblioteca de progressão aritmética
-        </CardLink>
-      </li>
+      <Card href="https://github.com/kauefraga/ruke">
+        Ruke, uma ferramenta simples
+      </Card>
+      <Card href="https://github.com/kauefraga/my-dotfiles">
+        Minhas configurações
+      </Card>
+      <Card href="https://dev.to/kauefraga/aprenda-a-fazer-um-readme-4n36">
+        Série sobre markdown e READMEs
+      </Card>
+      <Card href="https://github.com/kauefraga/ariprog">
+        Biblioteca de progressão aritmética
+      </Card>
     </ul>
   </main>
 </Layout>
