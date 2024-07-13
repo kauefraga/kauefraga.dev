@@ -30,7 +30,7 @@ Inicie o servidor de desenvolvimento:
 bun dev
 ```
 
-> ![NOTE]
+> [!NOTE]
 > O ambiente de desenvolvimento inclui artigos marcados como rascunho.
 
 Sobre o ambiente de produção, atualmente o website está implantado na plataforma [Netlify](https://www.netlify.com/). As implantações são acionadas automaticamente quando mudanças são adicionadas no ramo principal.
