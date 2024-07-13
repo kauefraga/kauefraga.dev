@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import NavLink from '../../components/NavLink.astro';
+import { formatDate } from '../../utils/formatDate';
 
 const shouldIncludeDrafts = process.env.NODE_ENV === 'development';
 
@@ -12,21 +13,6 @@ const posts = await getCollection(
 const sortedPosts = posts.sort(
   (a, b) => +b.data.publishDate - +a.data.publishDate
 );
-
-const months = [
-  'jan.',
-  'fev.',
-  'mar.',
-  'abr.',
-  'mai.',
-  'jun.',
-  'jul.',
-  'ago.',
-  'set.',
-  'out.',
-  'nov.',
-  'dez.',
-];
 ---
 
 <Layout title="Blog | Kauê Fraga Rodrigues">
@@ -36,18 +22,9 @@ const months = [
     <ul class="flex flex-col gap-3">
       {
         sortedPosts.map((post) => {
-          const day = post.data.publishDate
-            .getDate()
-            .toString()
-            .padStart(2, '0');
-          const month = months[post.data.publishDate.getMonth()];
-          const year = post.data.publishDate.getFullYear();
-
           return (
             <li class="flex flex-wrap gap-x-6 font-mono">
-              <p>
-                {day} {month} {year}
-              </p>
+              <p>{formatDate(post.data.publishDate)}</p>
               <NavLink href={`/blog/${post.slug}`}>{post.data.title}</NavLink>
             </li>
           );
