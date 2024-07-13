@@ -1,21 +1,26 @@
 ---
 import '@fontsource/jetbrains-mono';
-import '@fontsource/dm-sans';
+import '@fontsource/roboto';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 
 interface Props {
   title: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta
+      name="description"
+      content={description ??
+        'Website pessoal do Kauê. Aqui você pode descobrir quem ele é, que projetos ele fez, o que ele escreveu e mais.'}
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" />
     <title>{title}</title>
