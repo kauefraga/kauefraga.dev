@@ -10,14 +10,18 @@ interface Props {
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
 
-  return posts.map((post) => ({
-    params: {
-      slug: post.slug,
-    },
-    props: {
-      post,
-    },
-  }));
+  const shouldIncludeDrafts = process.env.NODE_ENV === 'development';
+
+  return posts
+    .filter((post) => (shouldIncludeDrafts ? post : !post.data.draft))
+    .map((post) => ({
+      params: {
+        slug: post.slug,
+      },
+      props: {
+        post,
+      },
+    }));
 }
 
 const { data, render } = Astro.props.post;
