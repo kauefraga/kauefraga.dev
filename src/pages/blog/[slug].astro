@@ -2,6 +2,8 @@
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import { formatDate } from '../../utils/formatDate';
+import { Icon } from 'astro-icon/components';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -28,12 +30,29 @@ const { data, render } = Astro.props.post;
 const { Content } = await render();
 ---
 
-<Layout title={`${data.author} | Blog do Kauê`}>
-  <header>
-    <p>{data.author.split('<')[0]}</p>
-  </header>
-
+<Layout title={data.title}>
   <article class="space-y-4 md:text-lg">
+    <header>
+      <h1 class="text-2xl font-bold text-violet-800 md:text-4xl">
+        {data.title}
+      </h1>
+      <p>{formatDate(data.publishDate)}</p>
+      {data.draft ? <p class="text-lg text-red-700">Rascunho</p> : null}
+    </header>
+
     <Content />
   </article>
 </Layout>
+
+<style is:global>
+  pre {
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+
+  code:not(pre code) {
+    border-radius: 6px;
+    padding: 2px 6px;
+    background-color: rgb(194, 194, 194);
+  }
+</style>
