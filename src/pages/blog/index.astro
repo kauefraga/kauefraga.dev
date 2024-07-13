@@ -7,7 +7,7 @@ const shouldIncludeDrafts = process.env.NODE_ENV === 'development';
 
 const posts = await getCollection(
   'blog',
-  shouldIncludeDrafts ? (post) => !post.data.draft : undefined
+  shouldIncludeDrafts ? undefined : (post) => !post.data.draft
 );
 const sortedPosts = posts.sort(
   (a, b) => +b.data.publishDate - +a.data.publishDate
