@@ -1,15 +1,13 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
 
-interface Props extends HTMLAttributes<'a'> {
-  inverted?: boolean;
-}
+interface Props extends HTMLAttributes<'a'> {}
 
-const { inverted, ...props } = Astro.props;
+const { ...props } = Astro.props;
 ---
 
 <a
   {...props}
-  class=`decoration-2 hover:underline ${inverted ? 'text-violet-800 decoration-black' : 'decoration-violet-800'}`
+  class="rounded-sm px-4 py-2 transition-colors hover:bg-violet-800 hover:text-white"
   ><slot /></a
 >

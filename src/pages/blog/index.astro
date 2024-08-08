@@ -16,7 +16,7 @@ const sortedPosts = posts.sort(
 ---
 
 <Layout title="Blog | Kauê Fraga Rodrigues">
-  <main class="space-y-5">
+  <main>
     <h1 class="text-2xl font-bold text-violet-800 md:text-4xl">Posts</h1>
 
     <ul class="flex flex-col gap-3">
@@ -24,7 +24,7 @@ const sortedPosts = posts.sort(
         sortedPosts.map((post) => {
           return (
             <li class="flex flex-wrap gap-x-6 font-mono">
-              <p>{formatDate(post.data.publishDate)}</p>
+              <p class="py-2">{formatDate(post.data.publishDate)}</p>
               <NavLink href={`/blog/${post.slug}`}>{post.data.title}</NavLink>
             </li>
           );

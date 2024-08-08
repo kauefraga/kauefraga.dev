@@ -25,9 +25,11 @@ const { title, description } = Astro.props;
     <link rel="icon" href="/favicon.ico" />
     <title>{title}</title>
   </head>
-  <body class="mx-auto max-w-4xl space-y-10 p-6 md:text-lg lg:p-0">
-    <Header />
-    <slot />
-    <Footer />
+  <body class="mx-auto max-w-4xl md:text-lg">
+    <div class="grid min-h-[100dvh] grid-rows-[auto_1fr_auto] px-6">
+      <Header />
+      <slot />
+      <Footer />
+    </div>
   </body>
 </html>
