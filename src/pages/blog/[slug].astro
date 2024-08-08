@@ -30,13 +30,19 @@ const { Content } = await render();
 ---
 
 <Layout title={data.title}>
-  <article class="space-y-4 md:text-lg">
+  <article class="my-16 space-y-4 md:text-lg">
     <header>
       <h1 class="text-2xl font-bold text-violet-800 md:text-4xl">
         {data.title}
+        {
+          data.draft ? (
+            <p class="text-lg font-normal text-zinc-400">(Rascunho)</p>
+          ) : (
+            ''
+          )
+        }
       </h1>
       <p>{formatDate(data.publishDate)}</p>
-      {data.draft ? <p class="text-lg text-red-700">Rascunho</p> : null}
     </header>
 
     <Content />
