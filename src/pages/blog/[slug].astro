@@ -30,7 +30,7 @@ const { Content } = await render();
 ---
 
 <Layout title={data.title}>
-  <article class="my-16 space-y-4 md:text-lg">
+  <article class="my-16 max-w-4xl space-y-4 md:text-lg">
     <header>
       <h1 class="text-2xl font-bold text-violet-800 md:text-4xl">
         {data.title}
@@ -50,14 +50,28 @@ const { Content } = await render();
 </Layout>
 
 <style is:global>
-  pre {
+  article pre {
     padding: 6px 12px;
     border-radius: 6px;
   }
 
-  code:not(pre code) {
+  article code:not(pre code) {
     border-radius: 6px;
     padding: 2px 6px;
     background-color: rgb(194, 194, 194);
+  }
+
+  article ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+
+  article a {
+    text-decoration: underline;
+    color: rgb(91, 33, 182);
+  }
+
+  article a:visited {
+    color: rgb(7, 89, 133);
   }
 </style>
