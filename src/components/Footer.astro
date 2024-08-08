@@ -1,11 +1,13 @@
 ---
 import { Icon } from 'astro-icon/components';
+
+const currentYear = new Date().getFullYear();
 ---
 
 <footer
   class="flex flex-col items-center gap-3 font-mono md:flex-row md:justify-between"
 >
-  <p>&copy; Kauê Fraga Rodrigues, 2024</p>
+  <p>&copy; {currentYear} Kauê Fraga Rodrigues</p>
 
   <ul class="flex gap-5 text-3xl">
     <li>
@@ -15,7 +17,11 @@ import { Icon } from 'astro-icon/components';
         aria-label="Meu LinkedIn"
         target="_blank"
       >
-        <Icon name="mdi:linkedin" size={36} class="hover:text-violet-800" />
+        <Icon
+          name="mdi:linkedin"
+          size={36}
+          class="text-violet-800 hover:text-black"
+        />
       </a>
     </li>
     <li>
@@ -25,7 +31,11 @@ import { Icon } from 'astro-icon/components';
         aria-label="Meu GitHub"
         target="_blank"
       >
-        <Icon name="mdi:github" size={36} class="hover:text-violet-800" />
+        <Icon
+          name="mdi:github"
+          size={36}
+          class="text-violet-800 hover:text-black"
+        />
       </a>
     </li>
     <li>
@@ -35,7 +45,11 @@ import { Icon } from 'astro-icon/components';
         aria-label="Meu Twitter/X"
         target="_blank"
       >
-        <Icon name="mdi:twitter" size={36} class="hover:text-violet-800" />
+        <Icon
+          name="mdi:twitter"
+          size={36}
+          class="text-violet-800 hover:text-black"
+        />
       </a>
     </li>
     <li>
@@ -45,7 +59,11 @@ import { Icon } from 'astro-icon/components';
         aria-label="Meu Instagram"
         target="_blank"
       >
-        <Icon name="mdi:instagram" size={36} class="hover:text-violet-800" />
+        <Icon
+          name="mdi:instagram"
+          size={36}
+          class="text-violet-800 hover:text-black"
+        />
       </a>
     </li>
   </ul>
