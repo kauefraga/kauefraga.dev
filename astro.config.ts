@@ -20,7 +20,4 @@ export default defineConfig({
       theme: 'tokyo-night',
     },
   },
-  server: {
-    open: true,
-  },
 });
