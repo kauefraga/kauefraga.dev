@@ -1,5 +1,9 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import sanitizeHtml from 'sanitize-html';
+import MarkdownIt from 'markdown-it';
+
+const parser = new MarkdownIt();
 
 export async function GET(context: { site: string }) {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
@@ -7,12 +11,11 @@ export async function GET(context: { site: string }) {
   const items = posts
     .sort((a, b) => +b.data.pubDate! - +a.data.pubDate!)
     .map(({ slug, data, body }) => ({
-      title: data.title,
-      pubDate: data.pubDate,
-      description: data.description,
-      customData: data.customData,
       link: `/blog/${slug}/`,
-      body,
+      content: sanitizeHtml(parser.render(body), {
+        allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
+      }),
+      ...data,
     }));
 
   return rss({
