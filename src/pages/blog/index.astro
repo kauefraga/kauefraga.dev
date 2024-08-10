@@ -10,7 +10,7 @@ const posts = await getCollection(
   'blog',
   shouldIncludeDrafts ? undefined : (post) => !post.data.draft
 );
-const sortedPosts = posts.sort((a, b) => +b.data.pubDate - +a.data.pubDate);
+const sortedPosts = posts.sort((a, b) => +b.data.pubDate! - +a.data.pubDate!);
 ---
 
 <Layout title="Blog | Kauê Fraga Rodrigues">
@@ -19,11 +19,11 @@ const sortedPosts = posts.sort((a, b) => +b.data.pubDate - +a.data.pubDate);
 
     <ul class="space-y-1">
       {
-        sortedPosts.map((post) => {
+        sortedPosts.map(({ slug, data }) => {
           return (
             <li class="flex flex-wrap items-center gap-x-6 font-mono">
-              <p>{formatDate(post.data.pubDate)}</p>
-              <NavLink href={`/blog/${post.slug}`}>{post.data.title}</NavLink>
+              <p>{formatDate(data.pubDate!)}</p>
+              <NavLink href={`/blog/${slug}`}>{data.title}</NavLink>
             </li>
           );
         })
