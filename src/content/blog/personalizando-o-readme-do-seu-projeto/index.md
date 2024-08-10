@@ -1,7 +1,7 @@
 ---
 
 title: 'Personalizando o README do seu projeto'
-publishDate: 2024-03-24
+pubDate: 2024-03-24
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 

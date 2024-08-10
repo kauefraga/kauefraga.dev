@@ -22,6 +22,12 @@ const { title, description } = Astro.props;
         'Website pessoal do Kauê. Aqui você pode descobrir quem ele é, que projetos ele fez, o que ele escreveu e mais.'}
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Kauê Fraga Rodrigues"
+      href={new URL('rss.xml', Astro.site)}
+    />
     <link rel="icon" href="/favicon.ico" />
     <title>{title}</title>
   </head>

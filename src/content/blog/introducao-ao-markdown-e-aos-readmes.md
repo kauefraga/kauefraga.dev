@@ -1,7 +1,7 @@
 ---
 
 title: 'Introdução ao markdown e aos READMEs'
-publishDate: 2024-03-18
+pubDate: 2024-03-18
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 

@@ -13,6 +13,7 @@
   "dependencies": {
     "@astrojs/check": "^0.7.0",
     "@astrojs/react": "^3.6.0",
+    "@astrojs/rss": "^4.0.7",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/jetbrains-mono": "^5.0.20",
     "@fontsource/roboto": "^5.0.13",

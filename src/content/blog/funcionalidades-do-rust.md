@@ -1,7 +1,7 @@
 ---
 
 title: 'Funcionalidades do Rust'
-publishDate: 2024-02-19
+pubDate: 2024-02-19T00:00:00.000Z
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 

@@ -11,7 +11,7 @@ export default defineConfig({
     tailwind(),
     icon({
       include: {
-        mdi: ['linkedin', 'github', 'twitter', 'instagram'],
+        mdi: ['linkedin', 'github', 'twitter', 'instagram', 'rss'],
       },
     }),
   ],

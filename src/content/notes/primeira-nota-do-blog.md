@@ -1,6 +1,6 @@
 ---
 title: 'Primeira nota do blog'
-publishDate: 2024-05-18
+pubDate: 2024-05-18
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 

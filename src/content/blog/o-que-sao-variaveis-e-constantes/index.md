@@ -1,7 +1,7 @@
 ---
 
 title: 'O que são variáveis e constantes'
-publishDate: 2024-01-28
+pubDate: 2024-01-28
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 

@@ -1,7 +1,7 @@
 ---
 
 title: 'Desbravando o poder do markdown'
-publishDate: 2024-08-01
+pubDate: 2024-08-01
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 draft: true
 ---

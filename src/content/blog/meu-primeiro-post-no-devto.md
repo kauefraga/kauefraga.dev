@@ -1,7 +1,7 @@
 ---
 
 title: 'Meu primeiro post no dev.to'
-publishDate: 2024-02-18
+pubDate: 2024-02-18
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 

@@ -1,7 +1,7 @@
 ---
 
 title: 'Instalando o Ruke pelo GitHub Releases'
-publishDate: 2024-05-20
+pubDate: 2024-05-20
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 
