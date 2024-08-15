@@ -2,7 +2,6 @@
 title: 'Desbravando o poder do markdown'
 pubDate: 2024-08-12T18:23:45.320Z
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
-draft: true
 ---
 
 Salve, salve! Vamos aprofundar nossos conhecimentos em markdown.
