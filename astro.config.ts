@@ -5,7 +5,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://kauefraga.netlify.app',
+  site: 'https://kauefraga.pages.dev',
   integrations: [
     react(),
     tailwind(),
