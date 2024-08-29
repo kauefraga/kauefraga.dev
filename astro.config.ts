@@ -12,6 +12,7 @@ export default defineConfig({
     icon({
       include: {
         mdi: ['linkedin', 'github', 'twitter', 'instagram', 'rss'],
+        ri: ['bluesky-fill'],
       },
     }),
   ],

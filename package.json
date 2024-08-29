@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.67",
+    "@iconify-json/ri": "^1.1.22",
     "@types/markdown-it": "^14.1.2",
     "@types/sanitize-html": "^2.11.0",
     "prettier": "^3.3.2",
