@@ -1,4 +1,4 @@
-# [kauefraga.com](https://kauefraga.netlify.app/) [![Twitter/X: @rkauefraga](https://img.shields.io/badge/twitter%2Fx-%40rkauefraga-blue)](https://x.com/rkauefraga) ![Discord: rustykaue](https://img.shields.io/badge/discord-rustykaue-5865F2) ![Netlify Status](https://api.netlify.com/api/v1/badges/d6173033-8a39-4551-872a-a0e3d45f831f/deploy-status)
+# [kauefraga.com](https://kauefraga.pages.dev/) [![Twitter/X: @rkauefraga](https://img.shields.io/badge/twitter%2Fx-%40rkauefraga-blue)](https://x.com/rkauefraga) ![Discord: rustykaue](https://img.shields.io/badge/discord-rustykaue-5865F2)
 
 > Aqui você vai achar meus projetos relevantes e os artigos escritos por mim, incluindo suas imagens e trechos de código.
 
@@ -33,7 +33,7 @@ bun dev
 > [!NOTE]
 > O ambiente de desenvolvimento inclui artigos marcados como rascunho.
 
-Sobre o ambiente de produção, atualmente o website está implantado na plataforma [Netlify](https://www.netlify.com/). As implantações são acionadas automaticamente quando mudanças são adicionadas no ramo principal.
+Sobre o ambiente de produção, atualmente o website está implantado na plataforma [Cloudflare](https://www.cloudflare.com/), mais especificamente, usando o serviço Cloudflare Pages. As implantações são acionadas automaticamente quando mudanças são adicionadas no ramo principal.
 
 ## Contribuindo
 
