@@ -36,6 +36,7 @@
     "@iconify-json/ri": "^1.1.22",
     "@types/markdown-it": "^14.1.2",
     "@types/sanitize-html": "^2.11.0",
+    "gray-matter": "^4.0.3",
     "prettier": "^3.3.2",
     "prettier-plugin-astro": "^0.14.0",
     "prettier-plugin-tailwindcss": "^0.6.5"
