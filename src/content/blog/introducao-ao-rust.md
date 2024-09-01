@@ -1,7 +1,7 @@
 ---
 
 title: 'Introdução ao Rust'
-pubDate: 2024-02-18
+pubDate: 2024-02-18T12:00:00.000Z
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 

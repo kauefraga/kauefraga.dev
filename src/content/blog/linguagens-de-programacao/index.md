@@ -1,7 +1,7 @@
 ---
 
 title: 'Escolhendo uma linguagem de programação'
-pubDate: 2024-06-17
+pubDate: 2024-06-17T12:00:00.000Z
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 draft: true
 ---

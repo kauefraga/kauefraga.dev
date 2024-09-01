@@ -1,7 +1,7 @@
 ---
 
 title: 'Ruke, uma ferramenta de automação de tarefas'
-pubDate: 2024-05-05
+pubDate: 2024-05-05T12:00:00.000Z
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 

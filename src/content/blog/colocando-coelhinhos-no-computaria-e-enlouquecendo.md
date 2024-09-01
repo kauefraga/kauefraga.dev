@@ -1,7 +1,7 @@
 ---
 
 title: 'Colocando coelhinhos no computaria e enlouquecendo'
-pubDate: 2024-04-06
+pubDate: 2024-04-06T12:00:00.000Z
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 

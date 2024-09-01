@@ -1,7 +1,7 @@
 ---
 
 title: 'Introdução ao markdown e aos READMEs'
-pubDate: 2024-03-18
+pubDate: 2024-03-18T12:00:00.000Z
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 
@@ -27,7 +27,7 @@ Atualmente existem vários processadores Markdown e variações (ou *supersets*)
 
 Veja um resumo ou *cheatsheet* da sintaxe markdown:
 
-```
+```md
 # Isto é um título ou um h1 em HTML
 ## Isto é um subtítulo ou um h2 em HTML
 ### Você já entendeu... vai até o h6 ou ######
@@ -54,6 +54,7 @@ Estou abaixo do divisor horizontal.
 E o resultado:
 
 ## Isto é um subtítulo ou um h2 em HTML
+
 ### Você já entendeu... vai até o h6 ou ######
 
 Isto é um parágrafo e a palavra **negrito** está em negrito, enquanto a palavra *itálico* está em itálico. ~~riscado~~ e [link](https://example.com).

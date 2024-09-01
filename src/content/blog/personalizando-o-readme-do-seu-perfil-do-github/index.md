@@ -1,6 +1,6 @@
 ---
 title: 'Personalizando o README do seu perfil do GitHub'
-pubDate: 2024-05-12
+pubDate: 2024-05-12T12:00:00.000Z
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 

@@ -1,7 +1,7 @@
 ---
 
 title: 'Eco, minha implementação em Rust do programa echo'
-pubDate: 2024-02-24
+pubDate: 2024-02-24T12:00:00.000Z
 author: 'Kauê Fraga Rodrigues <rkauefraga@gmail.com>'
 ---
 
