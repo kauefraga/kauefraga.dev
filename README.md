@@ -1,4 +1,4 @@
-# [kauefraga.com](https://kauefraga.pages.dev/) [![Twitter/X: @rkauefraga](https://img.shields.io/badge/twitter%2Fx-%40rkauefraga-blue)](https://x.com/rkauefraga) ![Discord: rustykaue](https://img.shields.io/badge/discord-rustykaue-5865F2)
+# [kauefraga.dev](https://kauefraga.dev/) [![Bluesky: @kauefraga.dev](https://img.shields.io/badge/bluesky-%40kauefraga.dev-blue)](https://bsky.app/profile/kauefraga.dev) [![Twitter/X: @rkauefraga](https://img.shields.io/badge/twitter%2Fx-%40rkauefraga-blue)](https://x.com/rkauefraga) ![Discord: rustykaue](https://img.shields.io/badge/discord-rustykaue-5865F2)
 
 > Aqui você vai achar meus projetos relevantes e os artigos escritos por mim, incluindo suas imagens e trechos de código.
 
@@ -37,6 +37,6 @@ Sobre o ambiente de produção, atualmente o website está implantado na platafo
 
 ## Contribuindo
 
-Achou algum erro de escrita, um link quebrado ou qualquer tipo de erro? Sinta-se à vontade para abrir [uma issue](https://github.com/kauefraga/blog/issues/new/choose). Da mesma forma para sugerir um tópico para eu abordar.
+Achou algum erro de escrita, um link quebrado ou qualquer tipo de erro? Sinta-se à vontade para abrir [uma issue](https://github.com/kauefraga/kauefraga.dev/issues/new/choose). Da mesma forma para sugerir um tópico para eu abordar.
 
 Quer adicionar alguma funcionalidade, refatorar o código ou fazer uma melhoria? Faça um fork do repositório, adicione commits com mensagens descritivas e envie o pull request :)
