@@ -1,4 +1,4 @@
-# [kauefraga.dev](https://kauefraga.dev/) [![Bluesky: @kauefraga.dev](https://img.shields.io/badge/bluesky-%40kauefraga.dev-blue)](https://bsky.app/profile/kauefraga.dev) [![Twitter/X: @rkauefraga](https://img.shields.io/badge/twitter%2Fx-%40rkauefraga-blue)](https://x.com/rkauefraga) ![Discord: rustykaue](https://img.shields.io/badge/discord-rustykaue-5865F2)
+# [kauefraga.dev](https://kauefraga.dev/) [![Bluesky: @kauefraga.dev](https://img.shields.io/badge/bluesky-%40kauefraga.dev-blue)](https://bsky.app/profile/kauefraga.dev) ![Discord: rustykaue](https://img.shields.io/badge/discord-rustykaue-5865F2)
 
 > Aqui você vai achar meus projetos relevantes e os artigos escritos por mim, incluindo suas imagens e trechos de código.
 
