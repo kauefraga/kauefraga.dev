@@ -7,7 +7,7 @@ export default {
     extend: {
       fontFamily: {
         mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
-        sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+        sans: ['Rubik', ...defaultTheme.fontFamily.sans],
       },
     },
   },
