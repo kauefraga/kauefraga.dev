@@ -3,6 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import { formatDate } from '../../utils/format-date';
+import ShareButton from '../../components/ShareButton.astro';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -40,6 +41,10 @@ const { Content } = await render();
     </header>
 
     <Content />
+
+    <footer>
+      <ShareButton title={data.title!} />
+    </footer>
   </article>
 </Layout>
 
@@ -53,6 +58,23 @@ const { Content } = await render();
     border-radius: 6px;
     padding: 2px 6px;
     background-color: rgb(194, 194, 194);
+  }
+
+  article h2 {
+    font-size: 28px;
+    padding-top: 8px;
+  }
+
+  article h3 {
+    font-size: 24px;
+    padding-top: 4px;
+  }
+
+  article h4,
+  article h5,
+  article h6 {
+    color: #374151;
+    padding-top: 4px;
   }
 
   article ul {
