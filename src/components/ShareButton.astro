@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+}
+
+import { Icon } from 'astro-icon/components';
+
+const blueskyIntentLink = 'https://bsky.app/intent/compose';
+const { title } = Astro.props;
+const url = Astro.url;
+---
+
+<a
+  href=`${blueskyIntentLink}?text="${title}" por Kauê Fraga Rodrigues ${url}`
+  target="_blank"
+  class="group flex w-fit flex-row items-center space-x-2 self-start rounded border bg-white px-3 py-2 text-black no-underline transition visited:text-black hover:border-black/90"
+>
+  <Icon
+    name="ri:bluesky-fill"
+    size={32}
+    class="border-r border-gray-400 pr-2 text-sky-600"
+  />
+  <p class="text-base">Compartilhe no Bluesky</p>
+</a>
