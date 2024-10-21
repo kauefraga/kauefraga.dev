@@ -103,7 +103,11 @@ Eu fiquei quase 3 anos na "caverna" e em 2024, quando decidi criar minha conta n
 
 O "boom" da minha integração com a bolha dev foi durante a [segunda edição da Rinha de Backend](https://github.com/zanfranceschi/rinha-de-backend-2024-q1), uma competição de soluções back end. Nesse evento compartilhei o desenvolvimento da minha solução, meu aprendizado da linguagem Go e participei de várias discussões sobre o desafio.
 
+Desde de então postei sobre meus projetos pessoais, estudos e códigos.
+
 Depois disso fui contratado para fazer uma modificação em um blog sobre computarias e recebi um convite valioso para trabalhar em um projeto confidencial.
+
+Eu concordo que as oportunidades vieram ao acaso, mas acredito que ser mais público influenciou minha "sorte". Sou grato a isso, ao learn in public, as pessoas que me impulsionaram e as pessoas que interagi e agregaram de alguma forma.
 
 Sobre os projetos que eu construí publicamente, gostaria de ressaltar
 
@@ -113,6 +117,8 @@ Sobre os projetos que eu construí publicamente, gostaria de ressaltar
 - [themis](https://github.com/kauefraga/themis) - analisador de perfil do Bluesky, conta 7 contribuidores atualmente
 
 Enfatizei esses porque foram os que eu mais divulguei e tive um feedback bacana. Eu normalmente crio meus projetos públicos e com licença MIT, porém esses escolhidos se sobressaem.
+
+Obrigado por ter lido! Espero que tenha te ajudado de alguma maneira.
 
 Onde me encontrar:
 
