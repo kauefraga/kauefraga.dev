@@ -29,7 +29,8 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 
 const wordsPerMinute = 200;
-const readingTime = Math.floor(post.body.split(' ').length / wordsPerMinute);
+const words = post.body ? post.body.split(' ').length : 0;
+const readingTime = Math.floor(words / wordsPerMinute);
 ---
 
 <Layout title={post.data.title!}>
