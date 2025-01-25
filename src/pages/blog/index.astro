@@ -19,11 +19,11 @@ const sortedPosts = posts.sort((a, b) => +b.data.pubDate! - +a.data.pubDate!);
 
     <ul class="space-y-1">
       {
-        sortedPosts.map(({ slug, data }) => {
+        sortedPosts.map(({ id, data }) => {
           return (
             <li class="flex flex-wrap items-center gap-x-6 font-mono">
               <p>{formatDate(data.pubDate!)}</p>
-              <NavLink href={`/blog/${slug}`}>{data.title}</NavLink>
+              <NavLink href={`/blog/${id}`}>{data.title}</NavLink>
             </li>
           );
         })

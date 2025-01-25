@@ -1,6 +1,5 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import { formatDate } from '../../utils/format-date';
 import ShareButton from '../../components/ShareButton.astro';
@@ -18,7 +17,7 @@ export async function getStaticPaths() {
     .filter((post) => (shouldIncludeDrafts ? post : !post.data.draft))
     .map((post) => ({
       params: {
-        slug: post.slug,
+        slug: post.id,
       },
       props: {
         post,
@@ -26,24 +25,24 @@ export async function getStaticPaths() {
     }));
 }
 
-const { data, render } = Astro.props.post;
-const { Content } = await render();
+const { post } = Astro.props;
+const { Content } = await render(post);
 ---
 
-<Layout title={data.title!}>
+<Layout title={post.data.title!}>
   <article class="my-16 h-full max-w-4xl space-y-4 md:text-lg">
     <header>
       <h1 class="text-2xl font-medium text-violet-800 md:text-4xl">
-        {data.title}
+        {post.data.title}
       </h1>
-      {data.draft ? <p>rascunho</p> : ''}
-      <p>{formatDate(data.pubDate!)}</p>
+      {post.data.draft ? <p>rascunho</p> : ''}
+      <p>{formatDate(post.data.pubDate!)}</p>
     </header>
 
     <Content />
 
     <footer>
-      <ShareButton title={data.title!} />
+      <ShareButton title={post.data.title!} />
     </footer>
   </article>
 </Layout>

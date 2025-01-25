@@ -1,5 +1,6 @@
 import { defineCollection, z } from 'astro:content';
 import { rssSchema } from '@astrojs/rss';
+import { glob } from 'astro/loaders';
 
 const schema = z.object({
   title: z.string(),
@@ -8,15 +9,23 @@ const schema = z.object({
   author: z.string().default('Kauê Fraga Rodrigues <rkauefraga@gmail.com>'),
 });
 
-const blogCollection = defineCollection({
+const blog = defineCollection({
+  loader: glob({
+    base: './src/content/blog',
+    pattern: '**/[^_]*.md'
+  }),
   schema: schema.merge(rssSchema),
 });
 
-const notesCollection = defineCollection({
+const notes = defineCollection({
+  loader: glob({
+    base: './src/content/notes',
+    pattern: '**/[^_]*.md'
+  }),
   schema,
 });
 
 export const collections = {
-  blog: blogCollection,
-  notes: notesCollection,
+  blog,
+  notes,
 };

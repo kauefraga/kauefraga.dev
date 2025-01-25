@@ -1,5 +1,5 @@
 {
-  "name": "kauefraga.com",
+  "name": "kauefraga.dev",
   "private": true,
   "type": "module",
   "version": "0.0.1",
@@ -12,15 +12,15 @@
     "deploy": "bun run build && wrangler pages deploy dist"
   },
   "dependencies": {
-    "@astrojs/check": "^0.7.0",
-    "@astrojs/react": "^3.6.0",
-    "@astrojs/rss": "^4.0.7",
-    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/check": "0.9.4",
+    "@astrojs/react": "4.1.6",
+    "@astrojs/rss": "4.0.11",
+    "@astrojs/tailwind": "5.1.5",
     "@fontsource/jetbrains-mono": "^5.0.20",
     "@fontsource/rubik": "^5.0.13",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "astro": "^4.11.0",
+    "astro": "5.1.9",
     "astro-icon": "^1.1.0",
     "markdown-it": "^14.1.0",
     "react": "^18.3.1",

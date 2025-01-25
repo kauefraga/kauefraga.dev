@@ -10,9 +10,9 @@ export async function GET(context: { site: string }) {
 
   const items = posts
     .sort((a, b) => +b.data.pubDate! - +a.data.pubDate!)
-    .map(({ slug, data, body }) => ({
-      link: `/blog/${slug}/`,
-      content: sanitizeHtml(parser.render(body), {
+    .map(({ id, data, body }) => ({
+      link: `/blog/${id}/`,
+      content: sanitizeHtml(parser.render(body!), {
         allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
       }),
       ...data,
