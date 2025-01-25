@@ -27,16 +27,21 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+const wordsPerMinute = 200;
+const readingTime = Math.floor(post.body.split(' ').length / wordsPerMinute);
 ---
 
 <Layout title={post.data.title!}>
   <article class="my-16 h-full max-w-4xl space-y-4 md:text-lg">
-    <header>
-      <h1 class="text-2xl font-medium text-violet-800 md:text-4xl">
+    <header class="space-y-2">
+      <h1 class="text-2xl font-medium text-violet-800 md:text-5xl">
         {post.data.title}
       </h1>
       {post.data.draft ? <p>rascunho</p> : ''}
-      <p>{formatDate(post.data.pubDate!)}</p>
+      <p class="text-black/70">
+        {formatDate(post.data.pubDate!)} • {readingTime} minutos de leitura
+      </p>
     </header>
 
     <Content />
