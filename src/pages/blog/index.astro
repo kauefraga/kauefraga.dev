@@ -17,12 +17,12 @@ const sortedPosts = posts.sort((a, b) => +b.data.pubDate! - +a.data.pubDate!);
   <main class="my-16 h-full space-y-5">
     <h1 class="text-2xl font-bold text-violet-800 md:text-4xl">Posts</h1>
 
-    <ul class="space-y-1">
+    <ul class="space-y-6 md:space-y-2">
       {
         sortedPosts.map(({ id, data }) => {
           return (
             <li class="flex flex-wrap items-center gap-x-6 font-mono">
-              <p>{formatDate(data.pubDate!)}</p>
+              <p class="text-black/80">{formatDate(data.pubDate!)}</p>
               <NavLink href={`/blog/${id}`}>{data.title}</NavLink>
             </li>
           );
