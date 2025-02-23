@@ -1,6 +1,8 @@
 ---
 import '@fontsource/jetbrains-mono';
-import '@fontsource/rubik';
+import '@fontsource/rubik/300.css';
+import '@fontsource/rubik/400.css';
+import '@fontsource/rubik/500.css';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 
@@ -31,8 +33,8 @@ const { title, description } = Astro.props;
     <link rel="icon" href="/favicon.ico" />
     <title>{title}</title>
   </head>
-  <body class="mx-auto max-w-4xl lg:text-lg">
-    <div class="grid min-h-[100dvh] grid-rows-[auto_1fr_auto] p-6">
+  <body class="mx-auto max-w-5xl">
+    <div class="grid min-h-[100dvh] grid-rows-[auto_1fr_auto] px-6 py-3">
       <Header />
       <slot />
       <Footer />
