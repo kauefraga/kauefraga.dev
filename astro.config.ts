@@ -3,7 +3,6 @@ import tailwind from '@astrojs/tailwind';
 import icon from 'astro-icon';
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
 export default defineConfig({
   site: 'https://kauefraga.dev',
   integrations: [
@@ -11,8 +10,9 @@ export default defineConfig({
     tailwind(),
     icon({
       include: {
-        mdi: ['linkedin', 'github', 'twitter', 'instagram', 'rss'],
+        mdi: ['dev-to', 'linkedin', 'github', 'twitter', 'instagram', 'rss'],
         ri: ['bluesky-fill'],
+        'skill-icons': ['github-dark']
       },
     }),
   ],
