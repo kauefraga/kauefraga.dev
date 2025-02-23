@@ -10,9 +10,10 @@ export default defineConfig({
     tailwind(),
     icon({
       include: {
-        mdi: ['dev-to', 'linkedin', 'github', 'twitter', 'instagram', 'rss'],
+        mdi: ['wrench', 'coffee', 'dev-to', 'linkedin', 'github', 'twitter', 'instagram', 'rss'],
         ri: ['bluesky-fill'],
-        'skill-icons': ['github-dark']
+        'skill-icons': ['github-dark'],
+        lucide: ['sprout']
       },
     }),
   ],

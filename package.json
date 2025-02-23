@@ -18,6 +18,10 @@
     "@astrojs/tailwind": "5.1.5",
     "@fontsource/jetbrains-mono": "^5.0.20",
     "@fontsource/rubik": "^5.0.13",
+    "@iconify-json/lucide": "^1.2.26",
+    "@iconify-json/mdi": "^1.1.67",
+    "@iconify-json/ri": "^1.1.22",
+    "@iconify-json/skill-icons": "^1.2.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "astro": "5.1.9",
@@ -31,9 +35,6 @@
     "wrangler": "^3.72.3"
   },
   "devDependencies": {
-    "@iconify-json/mdi": "^1.1.67",
-    "@iconify-json/ri": "^1.1.22",
-    "@iconify-json/skill-icons": "^1.2.0",
     "@types/markdown-it": "^14.1.2",
     "@types/sanitize-html": "^2.11.0",
     "gray-matter": "^4.0.3",
