@@ -1,0 +1,27 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'a'> {
+  title: string;
+  callToAction: string;
+}
+
+const { title, callToAction, ...props } = Astro.props;
+---
+
+<a
+  class="flex flex-col items-start justify-between gap-3 rounded-2xl border-2 border-black/20 p-6 shadow-sm hover:border-black/50"
+  target="_blank"
+  {...props}
+>
+  <div class="mb-4 space-y-2">
+    <slot name="icon" />
+    <h3>{title}</h3>
+  </div>
+
+  <p
+    class="flex-shrink rounded-xl bg-[#30363d] px-8 py-2 text-white transition hover:bg-[#161b22]"
+  >
+    {callToAction}
+  </p>
+</a>

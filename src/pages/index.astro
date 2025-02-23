@@ -1,53 +1,112 @@
 ---
-import { ReactTyped } from 'react-typed';
-import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
+import BentoCard from '../components/bento-cards/BentoCard.astro';
+import LargeBentoCard from '../components/bento-cards/LargeBentoCard.astro';
 
 import { Image } from 'astro:assets';
-import Kaue from '../assets/kaue.png';
+import { Icon } from 'astro-icon/components';
+
+import KaueProfilePicture from '../assets/kaue.png';
 ---
 
-<Layout title="Kauê Fraga Rodrigues">
-  <main class="my-16 flex h-full flex-grow flex-col items-center gap-10">
-    <header class="flex flex-col items-center gap-2">
-      <Image
-        class="max-h-40 max-w-40 rounded-full"
-        src={Kaue}
-        alt="Imagem de perfil do Kauê"
-        loading="eager"
-      />
-      <h1 class="text-2xl font-medium lg:text-3xl">Kauê Fraga Rodrigues</h1>
-      <ReactTyped
-        className="text-violet-800"
-        strings={[
-          'Desenvolvedor de Software',
-          'Mago do Código',
-          'Desenvolvedor Back-end',
-          'Eterno aprendiz',
-          'Entusiasta Rust',
-          'Go',
-          'TypeScript',
-        ]}
-        typeSpeed={90}
-        loop
-        client:visible
-      />
-    </header>
+<Layout title="kauefragadev.">
+  <main
+    class="flex flex-col items-center justify-between py-10 md:flex-row md:items-start"
+  >
+    <section class="max-w-sm space-y-5 text-center md:text-left">
+      <header
+        class="flex flex-col items-center gap-5 leading-loose md:items-start"
+      >
+        <Image
+          class="max-h-40 max-w-40 rounded-full"
+          src={KaueProfilePicture}
+          alt="Imagem de perfil do Kauê"
+          loading="eager"
+        />
 
-    <ul class="space-y-4">
-      <Card href="https://constantia.kauefraga.dev/"
-        >Constantia, acompanhador de hábitos</Card
+        <div>
+          <h1 class="text-2xl font-medium">Kauê Fraga Rodrigues</h1>
+          <p class="text-black/70">Desenvolvedor de Software</p>
+        </div>
+      </header>
+
+      <p>
+        Especialista em sistemas back end, desenvolvendo soluções para facilitar
+        a vida das pessoas.
+      </p>
+
+      <p>
+        Curioso e bem-humorado, gosto de compartilhar minha jornada e meus
+        estudos no meu blog e redes sociais.
+      </p>
+
+      <div class="flex flex-col gap-5 shadow">
+        <a
+          href="mailto:rkauefraga@gmail.com"
+          class="rounded border border-black/30 px-6 py-3 text-center transition-colors hover:border-black"
+        >
+          Entrar em contato
+        </a>
+      </div>
+    </section>
+
+    <section
+      class="mt-10 grid max-w-md grid-cols-1 gap-6 self-center md:mt-0 md:grid-cols-2 md:self-start"
+    >
+      <BentoCard
+        href="https://github.com/kauefraga?tab=repositories&sort=stargazers"
+        style={{ backgroundColor: 'rgba(48,54,61,0.1)' }}
+        title="Meus repositórios"
+        callToAction="Ver"
       >
-      <Card href="https://themis.kauefraga.dev/"
-        >Themis, avaliador de perfil do Bluesky</Card
+        <Icon name="skill-icons:github-dark" size={32} slot="icon" />
+      </BentoCard>
+
+      <BentoCard
+        href="https://dev.to/kauefraga"
+        title="Meus artigos"
+        callToAction="Ler"
       >
-      <Card href="https://dev.to/kauefraga/aprenda-a-fazer-um-readme-4n36">
-        Série sobre markdown e READMEs
-      </Card>
-      <Card href="https://github.com/kauefraga/my-dotfiles">
-        Minhas configurações
-      </Card>
-      <Card href="https://www.pixme.bio/kauefraga">Me apoie um café</Card>
-    </ul>
+        <Icon name="mdi:dev-to" size={32} slot="icon" />
+      </BentoCard>
+
+      <BentoCard
+        href="https://pixmeacoffee.vercel.app/kauefraga"
+        style={{ backgroundColor: 'rgba(45,91,255,0.1)' }}
+        title="Pix me a coffee"
+        callToAction="Doar"
+      >
+        <Icon name="mdi:coffee" size={32} color="#2d5bff" slot="icon" />
+      </BentoCard>
+
+      <BentoCard
+        href="https://github.com/kauefraga/ruke"
+        style={{ backgroundColor: 'rgba(247,76,0,0.1)' }}
+        title="Ruke, automação de scripts"
+        callToAction="Testar"
+      >
+        <Icon name="mdi:wrench" size={32} color="#f74c00" slot="icon" />
+      </BentoCard>
+
+      <LargeBentoCard
+        href="https://themis.kauefraga.dev"
+        style={{ backgroundColor: 'rgba(14,131,254,0.1)' }}
+        title="Themis"
+        callToAction="Acessar"
+        description="Gere uma análise detalhada e divertida do seu perfil da rede social Bluesky"
+      >
+        <Icon name="ri:bluesky-fill" size={32} color="#0e83fe" slot="icon" />
+      </LargeBentoCard>
+
+      <LargeBentoCard
+        href="https://constantia.kauefraga.dev"
+        style={{ backgroundColor: 'rgba(00,128,00,0.1)' }}
+        title="Constantia"
+        callToAction="Acessar"
+        description="Anote suas práticas e desenvolva bons hábitos"
+      >
+        <Icon name="lucide:sprout" size={32} color="#008000" slot="icon" />
+      </LargeBentoCard>
+    </section>
   </main>
 </Layout>
