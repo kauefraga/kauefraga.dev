@@ -1,16 +1,21 @@
 # [kauefraga.dev](https://kauefraga.dev/) [![Bluesky: @kauefraga.dev](https://img.shields.io/badge/bluesky-%40kauefraga.dev-blue)](https://bsky.app/profile/kauefraga.dev) ![Discord: kauefraga](https://img.shields.io/badge/discord-kauefraga-5865F2)
 
-> Aqui você vai achar meus projetos relevantes e os artigos escritos por mim, incluindo suas imagens e trechos de código.
+Site pessoal de Kauê Fraga Rodrigues, desenvolvedor de software, especialista em back end com TypeScript e NodeJS.
 
 ## Arquitetura
 
-Para construir este website eu escolhi o framework [Astro](https://astro.build/) porque
+Eu escolhi o framework [Astro](https://astro.build/) para construir este site porque
 
-- Tem como base HTML e CSS, além de ser orientado a conteúdo (_content-driven_)
-- É agnóstico a bibliotecas/frameworks de UI e tem várias integrações convenientes (react, tailwindcss, astro-icon, astro-rss)
-- É focado na experiência do desenvolvedor com uma boa documentação, guias de implantação intuitivos e excelente ferramenta para executar em desenvolvimento e fazer o build
+- Tem sintaxe baseada em HTML, CSS e JavaScript puros, o que facilitou meu aprendizado
+- Tem geração de sites estáticos (SSG), que me permitiu criar um blog eficiente
+- Tem várias integrações convenientes (react, tailwindcss, astro-icon, astro-rss)
+- É focado na experiência do desenvolvedor com uma boa documentação, guias de implantação fáceis de seguir e para vários ambientes, além da excelente ferramenta para executar projetos em desenvolvimento e fazer o build
 
 Os artigos estão no diretório [`src/content/blog`](src/content/blog/), você pode ler artigos que ainda são rascunhos... 👀
+
+```sh
+bun scripts/find-drafts.ts
+```
 
 Eu também posto meus artigos no [dev.to](https://dev.to/kauefraga) e no [tabnews](http://tabnews.com.br/kauefraga).
 
@@ -33,7 +38,7 @@ bun dev
 > [!NOTE]
 > O ambiente de desenvolvimento inclui artigos marcados como rascunho.
 
-Sobre o ambiente de produção, atualmente o website está implantado na plataforma [Cloudflare](https://www.cloudflare.com/), mais especificamente, usando o serviço Cloudflare Pages. As implantações são acionadas automaticamente quando mudanças são adicionadas no ramo principal.
+Sobre o ambiente de produção, atualmente o website está implantado na plataforma [Cloudflare](https://www.cloudflare.com/), mais especificamente, usando o serviço Cloudflare Pages. Decidi fazer as implantações manualmente usando a ferramenta Wrangler da Cloudflare.
 
 ## Contribuindo
 
