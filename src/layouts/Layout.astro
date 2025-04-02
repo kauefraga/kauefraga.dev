@@ -30,6 +30,11 @@ const { title, description } = Astro.props;
       title="Kauê Fraga Rodrigues"
       href={new URL('rss.xml', Astro.site)}
     />
+    <script
+      is:inline
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7963046428841799"
+      crossorigin="anonymous"></script>
     <link rel="icon" href="/favicon.ico" />
     <title>{title}</title>
   </head>
@@ -39,10 +44,5 @@ const { title, description } = Astro.props;
       <slot />
       <Footer />
     </div>
-    <script
-      is:inline
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7963046428841799"
-      crossorigin="anonymous"></script>
   </body>
 </html>
