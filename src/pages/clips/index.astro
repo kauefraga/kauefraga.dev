@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ClipCard from '../../components/clip-cards/ClipCard.astro';
+import { getClipsMetadata } from '../../services/get-clips-metadata';
+
+const clipsMetadata = getClipsMetadata().filter((metadata) => metadata.status === "uploaded");
+
+---
+
+<Layout title="Clipes | Kauê Fraga Rodrigues">
+  <main class="my-16 h-full space-y-5">
+    <div class="flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-violet-800 md:text-4xl">Clipes</h1>
+
+      <a href="/clips/upload" class=" hover:bg-black transition hover:text-white px-5 py-2 rounded-full">Eu sou o adm</a>
+    </div>
+
+    <ul class="grid grid-cols-3 gap-5 justify-items-center">
+      {
+        clipsMetadata.map((metadata) => {
+          return (
+            <li class="flex flex-wrap items-center gap-x-6 font-mono">
+              <ClipCard clipMetadata={metadata} />
+            </li>
+          );
+        })
+      }
+    </ul>
+  </main>
+</Layout>
+ 

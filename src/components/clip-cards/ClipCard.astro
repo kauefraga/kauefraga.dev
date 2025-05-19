@@ -1,0 +1,24 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import type { ClipMetadata } from '../../services/get-clips-metadata';
+import { formatDate } from '../../utils/format-date';
+
+interface Props extends HTMLAttributes<'a'> {
+  clipMetadata: ClipMetadata;
+}
+
+const { clipMetadata, ...props } = Astro.props;
+---
+
+<a
+  class="flex flex-col rounded-lg hover:bg-black/5 transition"
+  href={`/clips/${clipMetadata.id}`}
+  {...props}
+>
+    <img class="rounded-lg hover:rounded-b-none transition-[border-radius]" src="https://placehold.co/300x200" alt="" loading="lazy"  />
+
+    <div class="space-y-2 p-4">
+        <h3 class="w-60 truncate">{clipMetadata.title}</h3>
+        <p class="text-black/50 text-sm">{formatDate(new Date(clipMetadata.createdAt))}</p>
+    </div>
+</a>
