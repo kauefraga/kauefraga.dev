@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// req to /v1/user/auth
+const isAuthenticatedAndAdmin = true;
+
+if (!isAuthenticatedAndAdmin) {
+    return Astro.redirect('/clips/login');
+}
+
+if (Astro.request.method === "POST") {
+  try {
+    const data = await Astro.request.formData();
+
+    console.log(data.keys());
+
+    const clip = data.get("clip");
+    const title = data.get("title");
+
+    if (clip) {
+        console.log('> Clipe recebido!');
+        console.log(clip);
+
+        if (clip instanceof File) {
+            console.log(`Arquivo: ${clip.name}, Tipo: ${clip.type}`);
+        }
+    }
+
+    // req to /v1/clip/upload
+
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    }
+  }
+}
+
+---
+
+<Layout title="Upload clipe | Kauê Fraga Rodrigues">
+  <main class="my-16 h-full space-y-5">
+    <h1 class="text-2xl font-bold text-violet-800 md:text-4xl">Upload clipe</h1>
+    
+    <form method="POST" enctype="multipart/form-data" class="space-y-4">
+        <div class="space-y-2">
+            <p>Clipe</p>
+            <input type="file" name="clip" required class="p-2 rounded border-2 transition border-black/20 hover:border-black" />
+        </div>
+
+        <div class="space-y-2">
+            <p>Title</p>
+            <input type="text" name="title" required class="p-2 rounded border-2 transition border-black/20 hover:border-black" />
+        </div>
+
+        <button>Enviar</button>
+    </form>
+  </main>
+</Layout>
+ 

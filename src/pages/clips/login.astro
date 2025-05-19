@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// req to /v1/user/auth
+const isAuthenticatedAndAdmin = false;
+
+if (isAuthenticatedAndAdmin) {
+    return Astro.redirect('/clips/upload');
+}
+
+if (Astro.request.method === "POST") {
+  try {
+    const data = await Astro.request.formData();
+    const email = data.get("email");
+    const password = data.get("password");
+
+    // req to /v1/user/login
+    if (email === "rkf@gmail.com" && password === "1234") {
+        return Astro.redirect('/clips/upload');
+    }
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    }
+  }
+}
+
+---
+
+<Layout title="Login | Kauê Fraga Rodrigues">
+  <main class="my-16 h-full space-y-5">
+    <h1 class="text-2xl font-bold text-violet-800 md:text-4xl">Bem-vindo de volta, adm!</h1>
+
+    <form method="POST" class="space-y-4">
+        <div class="space-y-2">
+            <p>E-mail</p>
+            <input type="text" name="email" required class="p-2 rounded border-2 transition border-black/20 hover:border-black" />
+        </div>
+
+        <div class="space-y-2">
+            <p>Senha</p>
+            <input type="password" name="password" required class="p-2 rounded border-2 transition border-black/20 hover:border-black" />
+        </div>
+
+        <button>Entrar</button>
+    </form>
+  </main>
+</Layout>
+ 
