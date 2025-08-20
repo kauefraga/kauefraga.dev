@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --color-main: #0466C9;
+  --color-main-darker: #023E7D;
+}
+
 body {
   font-family: "Rubik Variable", sans-serif;
 }

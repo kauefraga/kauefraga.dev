@@ -23,7 +23,7 @@
     "@iconify-json/skill-icons": "^1.2.0",
     "@tailwindcss/vite": "^4.1.12",
     "astro": "5.1.9",
-    "astro-icon": "^1.1.0",
+    "astro-icon": "^1.1.5",
     "markdown-it": "^14.1.0",
     "sanitize-html": "^2.13.0",
     "tailwindcss": "^4.1.12",

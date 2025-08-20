@@ -1,12 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
 import BentoCard from '../components/bento-cards/BentoCard.astro';
 import LargeBentoCard from '../components/bento-cards/LargeBentoCard.astro';
+import Profile from '../components/Profile.astro';
+import Layout from '../layouts/Layout.astro';
 
-import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
-
-import KaueProfilePicture from '../assets/kaue.png';
 ---
 
 <Layout title="kauefragadev.">
@@ -14,44 +13,11 @@ import KaueProfilePicture from '../assets/kaue.png';
     class="flex flex-col items-center justify-between py-10 md:flex-row md:items-start"
   >
     <section class="max-w-sm space-y-5 text-center md:text-left">
-      <header
-        class="flex flex-col items-center gap-5 leading-loose md:items-start"
-      >
-        <Image
-          class="max-h-40 max-w-40 rounded-full"
-          src={KaueProfilePicture}
-          alt="Imagem de perfil do Kauê"
-          loading="eager"
-        />
-
-        <div>
-          <h1 class="text-2xl font-medium">Kauê Fraga Rodrigues</h1>
-          <p class="text-black/70">Desenvolvedor de Software</p>
-        </div>
-      </header>
-
-      <p>
-        Especialista em sistemas back end, desenvolvendo soluções para facilitar
-        a vida das pessoas.
-      </p>
-
-      <p>
-        Curioso e bem-humorado, gosto de compartilhar minha jornada e meus
-        estudos no meu blog e redes sociais.
-      </p>
-
-      <div class="flex flex-col gap-5 shadow">
-        <a
-          href="mailto:rkauefraga@gmail.com"
-          class="rounded border border-black/30 px-6 py-3 text-center transition-colors hover:border-black"
-        >
-          Entrar em contato
-        </a>
-      </div>
+      <Profile />
     </section>
 
     <section
-      class="mt-10 grid max-w-md grid-cols-1 gap-6 self-center md:mt-0 md:grid-cols-2 md:self-start"
+      class="mt-10 grid max-w-lg flex-1 grid-cols-1 gap-5 self-center md:mt-0 md:grid-cols-2 md:self-start"
     >
       <BentoCard
         href="https://github.com/kauefraga?tab=repositories&sort=stargazers"
@@ -71,7 +37,16 @@ import KaueProfilePicture from '../assets/kaue.png';
       </BentoCard>
 
       <BentoCard
-        href="https://pixmeacoffee.vercel.app/kauefraga"
+        href="https://linkedin.com/in/kauefraga"
+        style={{ backgroundColor: 'rgba(10,102,194,0.1)' }}
+        title="Meu LinkedIn"
+        callToAction="Conectar"
+      >
+        <Icon name="mdi:linkedin" size={32} color="#0A66C2" slot="icon" />
+      </BentoCard>
+
+      <BentoCard
+        href="/pixmeacoffee"
         style={{ backgroundColor: 'rgba(45,91,255,0.1)' }}
         title="Pix me a coffee"
         callToAction="Doar"
@@ -79,14 +54,22 @@ import KaueProfilePicture from '../assets/kaue.png';
         <Icon name="mdi:coffee" size={32} color="#2d5bff" slot="icon" />
       </BentoCard>
 
-      <BentoCard
-        href="https://github.com/kauefraga/ruke"
-        style={{ backgroundColor: 'rgba(247,76,0,0.1)' }}
-        title="Ruke, automação de scripts"
-        callToAction="Testar"
+      <LargeBentoCard
+        href="https://rinhers.kauefraga.dev"
+        style={{ backgroundColor: 'rgba(112,4,232,0.1)' }}
+        title="Rinhers™"
+        callToAction="Acessar"
+        description="Conheça os participantes e suas soluções da Rinha de Back end 2025"
       >
-        <Icon name="mdi:wrench" size={32} color="#f74c00" slot="icon" />
-      </BentoCard>
+        <Image
+          src="https://raw.githubusercontent.com/kauefraga/rinhers/refs/heads/main/public/icon.png"
+          alt="Rinhers™ logo"
+          width="32"
+          height="32"
+          loading="eager"
+          slot="icon"
+        />
+      </LargeBentoCard>
 
       <LargeBentoCard
         href="https://themis.kauefraga.dev"

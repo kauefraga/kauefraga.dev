@@ -1,0 +1,39 @@
+---
+import { Image } from 'astro:assets';
+import KaueProfilePicture from '../assets/kaue2025.png';
+---
+
+<>
+  <header class="flex flex-col items-center gap-5 leading-loose md:items-start">
+    <Image
+      class="max-h-40 max-w-40 rounded-full"
+      src={KaueProfilePicture}
+      alt="Imagem de perfil do Kauê"
+      loading="eager"
+    />
+
+    <div>
+      <h1 class="text-2xl font-medium">Kauê Fraga Rodrigues</h1>
+      <p class="text-black/70">Desenvolvedor de Software</p>
+    </div>
+  </header>
+
+  <p>
+    Especialista em sistemas back end, desenvolvendo soluções para facilitar a
+    vida das pessoas.
+  </p>
+
+  <p>
+    Curioso e bem-humorado, gosto de compartilhar minha jornada e meus estudos
+    no meu blog e redes sociais.
+  </p>
+
+  <div class="flex flex-col gap-5 shadow">
+    <a
+      href="mailto:rkauefraga@gmail.com"
+      class="rounded border border-black/30 px-6 py-3 text-center transition-colors hover:border-black"
+    >
+      Entrar em contato
+    </a>
+  </div>
+</>
