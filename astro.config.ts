@@ -24,5 +24,6 @@ export default defineConfig({
     }),
   ],
   vite: { plugins: [tailwindcss()] },
+  prefetch: true,
   markdown: { shikiConfig: { theme: 'tokyo-night' } },
 });

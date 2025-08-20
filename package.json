@@ -25,6 +25,7 @@
     "astro": "5.1.9",
     "astro-icon": "^1.1.5",
     "markdown-it": "^14.1.0",
+    "qrcode": "^1.5.4",
     "sanitize-html": "^2.13.0",
     "tailwindcss": "^4.1.12",
     "typescript": "^5.5.2",
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
+    "@types/qrcode": "^1.5.5",
     "@types/sanitize-html": "^2.11.0",
     "gray-matter": "^4.0.3",
     "prettier": "^3.3.2",

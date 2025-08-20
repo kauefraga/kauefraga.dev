@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import { Image } from 'astro:assets';
+import KaueProfilePicture from '../assets/kaue2025.png';
+---
+
+<Layout title="Pix me a coffee | Kauê Fraga Rodrigues">
+  <main class="my-10 flex h-full flex-col items-center space-y-5">
+    <div class="flex flex-col items-center gap-5 md:flex-row">
+      <Image
+        class="h-28 w-28 rounded-full"
+        src={KaueProfilePicture}
+        alt="Imagem de perfil do Kauê"
+        loading="eager"
+      />
+
+      <div>
+        <h1 class="text-2xl font-medium">Kauê Fraga Rodrigues</h1>
+        <p class="text-black/70">Desenvolvedor de Software</p>
+      </div>
+    </div>
+
+    <div class="max-w-sm space-y-5">
+      <p class="text-center">
+        Prazer, sou o Kauê! Adoro desenvolver software open-source, tanto para
+        pessoas comuns quanto para desenvolvedores.
+      </p>
+
+      <p class="text-center">
+        Você pode me ajudar a
+        <span class="decoration-main underline">
+          manter esses projetos e a continuar construindo novos</span
+        >!
+      </p>
+    </div>
+
+    <canvas id="qr-code"></canvas>
+
+    <button
+      id="copy-pix"
+      class="bg-main hover:bg-main-darker rounded-full px-5 py-2 text-white transition"
+    >
+      Copiar pix</button
+    >
+    <p
+      id="pix-key"
+      class="rounded-lg border border-black/20 p-3 transition hover:border-black/50 hover:bg-black/5"
+    >
+      bca42447-1a1e-4141-8b50-50a355f93b1a
+    </p>
+
+    <p id="clipboard-result" class="text-main h-10 w-52 text-center"></p>
+  </main>
+</Layout>
+
+<script>
+  import QRCode from 'qrcode';
+  import { copyToClipboard } from '../utils/copy-pix';
+
+  const qrCanvas = document.getElementById('qr-code');
+  if (!qrCanvas) {
+    console.error('QR canvas does not exist');
+  }
+
+  const pixKey =
+    '00020126580014BR.GOV.BCB.PIX0136bca42447-1a1e-4141-8b50-50a355f93b1a5204000053039865802BR5920Kaue Fraga Rodrigues6009SAO PAULO62140510MCO2bTmJOj63040019';
+
+  QRCode.toCanvas(qrCanvas, pixKey, (error: unknown) => {
+    if (error) console.error(error);
+  });
+
+  const copyPixElements = [
+    document.getElementById('copy-pix'),
+    document.getElementById('pix-key'),
+  ];
+
+  const clipboardResult = document.getElementById('clipboard-result');
+
+  for (const copyPixElement of copyPixElements) {
+    if (copyPixElement) {
+      copyPixElement.addEventListener('click', () => {
+        const ok = copyToClipboard(pixKey);
+
+        if (clipboardResult) {
+          if (!ok) {
+            clipboardResult.textContent =
+              'Ocorreu um erro ao tentar copiar a chave!';
+          }
+
+          clipboardResult.textContent = 'Chave Pix copiada!';
+        }
+      });
+    }
+  }
+</script>
