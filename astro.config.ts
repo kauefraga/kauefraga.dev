@@ -1,23 +1,28 @@
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 import icon from 'astro-icon';
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
   site: 'https://kauefraga.dev',
   integrations: [
-    tailwind(),
     icon({
       include: {
-        mdi: ['wrench', 'coffee', 'dev-to', 'linkedin', 'github', 'twitter', 'instagram', 'rss'],
+        mdi: [
+          'wrench',
+          'coffee',
+          'dev-to',
+          'linkedin',
+          'github',
+          'twitter',
+          'instagram',
+          'rss',
+        ],
         ri: ['bluesky-fill'],
         'skill-icons': ['github-dark'],
-        lucide: ['sprout']
+        lucide: ['sprout'],
       },
     }),
   ],
-  markdown: {
-    shikiConfig: {
-      theme: 'tokyo-night',
-    },
-  },
+  vite: { plugins: [tailwindcss()] },
+  markdown: { shikiConfig: { theme: 'tokyo-night' } },
 });

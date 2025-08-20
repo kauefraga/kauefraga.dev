@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+code,
+.astro-code pre,
+.astro-code code,
+.astro-code span {
+  font-family: 'JetBrains Mono', monospace;
+}

@@ -14,20 +14,21 @@
   "dependencies": {
     "@astrojs/check": "0.9.4",
     "@astrojs/rss": "4.0.11",
-    "@astrojs/tailwind": "5.1.5",
+    "@astrojs/tailwind": "6.0.2",
     "@fontsource/jetbrains-mono": "^5.0.20",
     "@fontsource/rubik": "^5.0.13",
     "@iconify-json/lucide": "^1.2.26",
     "@iconify-json/mdi": "^1.1.67",
     "@iconify-json/ri": "^1.1.22",
     "@iconify-json/skill-icons": "^1.2.0",
+    "@tailwindcss/vite": "^4.1.12",
     "astro": "5.1.9",
     "astro-icon": "^1.1.0",
     "markdown-it": "^14.1.0",
     "sanitize-html": "^2.13.0",
-    "tailwindcss": "^3.4.4",
+    "tailwindcss": "^4.1.12",
     "typescript": "^5.5.2",
-    "wrangler": "^3.72.3"
+    "wrangler": "^4.31.0"
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
@@ -36,5 +37,8 @@
     "prettier": "^3.3.2",
     "prettier-plugin-astro": "^0.14.0",
     "prettier-plugin-tailwindcss": "^0.6.5"
-  }
+  },
+  "trustedDependencies": [
+    "@tailwindcss/oxide"
+  ]
 }

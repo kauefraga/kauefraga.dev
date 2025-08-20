@@ -1,8 +1,8 @@
 ---
-import { getCollection, type CollectionEntry, render } from 'astro:content';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import ShareButton from '../../components/ShareButton.astro';
 import Layout from '../../layouts/Layout.astro';
 import { formatDate } from '../../utils/format-date';
-import ShareButton from '../../components/ShareButton.astro';
 
 interface Props {
   post: CollectionEntry<'blog'>;
