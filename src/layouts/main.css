@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik Variable", sans-serif;
 }
 
 code,
 .astro-code pre,
 .astro-code code,
 .astro-code span {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono Variable", monospace;
 }
