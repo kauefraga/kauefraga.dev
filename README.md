@@ -1,23 +1,25 @@
 # [kauefraga.dev](https://kauefraga.dev/) [![Bluesky: @kauefraga.dev](https://img.shields.io/badge/bluesky-%40kauefraga.dev-blue)](https://bsky.app/profile/kauefraga.dev) ![Discord: kauefraga](https://img.shields.io/badge/discord-kauefraga-5865F2)
 
-Site pessoal de Kauê Fraga Rodrigues, desenvolvedor de software, especialista em back end com TypeScript e NodeJS.
+Site pessoal de Kauê Fraga Rodrigues, desenvolvedor de software, especialista em back end com TypeScript e Node.js.
+
+###### Destaques
+
+- [Blog](https://kauefraga.dev/blog/) onde se encontram artigos sobre opiniões, tecnologias e projetos do autor
+- [Projetos](https://kauefraga.dev/projetos) onde é possível conhecer alguns dos principais projetos do autor
+
+<sub>Os artigos podem ser encontrados no [dev.to](https://dev.to/kauefraga) e no [tabnews](http://tabnews.com.br/kauefraga) também.</sub>
 
 ## Arquitetura
 
-Eu escolhi o framework [Astro](https://astro.build/) para construir este site porque
+Foi escolhido o framework [Astro](https://astro.build/) para construir este site porque
 
-- Tem sintaxe baseada em HTML, CSS e JavaScript puros, o que facilitou meu aprendizado
-- Tem geração de sites estáticos (SSG), que me permitiu criar um blog eficiente
-- Tem várias integrações convenientes (react, tailwindcss, astro-icon, astro-rss)
-- É focado na experiência do desenvolvedor com uma boa documentação, guias de implantação fáceis de seguir e para vários ambientes, além da excelente ferramenta para executar projetos em desenvolvimento e fazer o build
+- É baseado na tríade Web (HTML5, CSS3 e JS), o que facilita o aprendizado de quem já conhece o ecossistema
+- Tem mecanismo de geração de sites estáticos (SSG), essencial para construção do blog de forma simples e eficiente
+- É focado na experiência do desenvolvedor com uma boa documentação e excelente ferramenta para executar os projetos em desenvolvimento e fazer o build
 
-Os artigos estão no diretório [`src/content/blog`](src/content/blog/), você pode ler artigos que ainda são rascunhos... 👀
+Além das várias integrações convenientes (react, tailwindcss, astro-icon, astro-rss) e guias de implantação fáceis de seguir, cobrindo diferentes necessidades.
 
-```sh
-bun scripts/find-drafts.ts
-```
-
-Eu também posto meus artigos no [dev.to](https://dev.to/kauefraga) e no [tabnews](http://tabnews.com.br/kauefraga).
+Sobre o ambiente de produção, o website está implantado na plataforma [Cloudflare](https://www.cloudflare.com/) usando o serviço Cloudflare Pages. Novas implantações são feitas de forma manual usando a ferramenta Wrangler da Cloudflare.
 
 ## Como rodar localmente
 
@@ -29,19 +31,37 @@ Primeiro instale as dependências:
 bun install
 ```
 
-Inicie o servidor de desenvolvimento:
+Em seguida, inicie o servidor de desenvolvimento:
 
 ```sh
 bun dev
 ```
 
 > [!NOTE]
-> O ambiente de desenvolvimento inclui artigos marcados como rascunho.
+> O ambiente de desenvolvimento inclui artigos marcados como rascunho, cujos também podem ser encontrados no diretório [`src/content/blog`](src/content/blog/).
 
-Sobre o ambiente de produção, atualmente o website está implantado na plataforma [Cloudflare](https://www.cloudflare.com/), mais especificamente, usando o serviço Cloudflare Pages. Decidi fazer as implantações manualmente usando a ferramenta Wrangler da Cloudflare.
+## Scripts para o escritor
+
+Para criar um novo artigo incluindo o cabeçalho com título, data atual, autor e o modo rascunho:
+
+```sh
+bun scripts/create-draft.ts
+```
+
+Para identificar os artigos em rascunho:
+
+```sh
+bun scripts/find-drafts.ts
+```
 
 ## Contribuindo
 
-Achou algum erro de escrita, um link quebrado ou qualquer tipo de erro? Sinta-se à vontade para abrir [uma issue](https://github.com/kauefraga/kauefraga.dev/issues/new/choose). Da mesma forma para sugerir um tópico para eu abordar.
+Achou algum erro de escrita, um link quebrado ou qualquer tipo de erro? Pode abrir [uma issue](https://github.com/kauefraga/kauefraga.dev/issues/new/choose).
 
-Quer adicionar alguma funcionalidade, refatorar o código ou fazer uma melhoria? Faça um fork do repositório, adicione commits com mensagens descritivas e envie o pull request :)
+Ideias de tópicos para escrever são super bem-vindas :)
+
+## Licença
+
+Este projeto está sob a licença MIT - Veja a [LICENÇA](LICENSE) para mais informações.
+
+Gostou do design do site ou alguma coisa em específico? Fique à vontade para fazer um fork do projeto ou se inspirar nele.
